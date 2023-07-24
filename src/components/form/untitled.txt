@@ -1,0 +1,106 @@
+  //country
+         <div>
+          <input
+            className='form-input'
+            placeholder="Country/Region"
+            type="text"
+            name="country"
+            value={formValues.country}
+            onChange={handleChange}
+        />
+        </div>
+        
+        
+        
+        
+  //fullname        
+        <div>
+        
+         <input
+            className='form-input'
+            placeholder="First name"
+            type="text"
+            name="firstname"
+            value={formValues.firstname}
+            onChange={handleChange}
+        />
+        
+         <input
+            className='form-input'
+            placeholder="Last name"
+            type="text"
+            name="lastname"
+            value={formValues.lastname}
+            onChange={handleChange}
+        />
+      
+        </div>
+        
+        
+         //Address      
+        <div>
+              <div>
+                   <input
+                      className='form-input'
+                      placeholder="Address"
+                      type="text"
+                      name="address"
+                      value={formValues.address}
+                      onChange={handleChange}
+                  />
+                  
+                   <input
+                      className='form-input'
+                      placeholder="Apartment, Suite, etc. (Optional)"
+                      type="text"
+                      name="apartment"
+                      value={formValues.apartment}
+                      onChange={handleChange}
+                  />
+            </div>
+            
+//city      
+            <div>
+                <input
+                      className='form-input'
+                      placeholder="City"
+                      type="text"
+                      name="city"
+                      value={formValues.city}
+                      onChange={handleChange}
+                  />
+                  
+                   <input
+                      className='form-input'
+                      placeholder="State"
+                      type="text"
+                      name="state"
+                      value={formValues.state}
+                      onChange={handleChange}
+                  />
+                  
+                   <input
+                      className='form-input'
+                      placeholder="ZIP code"
+                      type="text"
+                      name="zipcode"
+                      value={formValues.zipcode}
+                      onChange={handleChange}
+                  />
+            </div>
+            
+     //phone number       
+            <div>
+                 <input
+                      className='form-input'
+                      placeholder="Phone"
+                      type="number"
+                      name="phone"
+                      value={formValues.phone}
+                      onChange={handleChange}
+                  />
+            </div>
+      
+      
+        </div>
+        
