@@ -104,3 +104,15 @@
       
         </div>
         
+        <div className='box'>
+        <input
+          placeholder="Password"
+          type="text"
+          name="password"
+          value={formValues.password}
+          onChange={handleChange}
+        />
+         <div className="errorMsg">
+            {touched.password && formError.password}
+          </div>
+        </div>

