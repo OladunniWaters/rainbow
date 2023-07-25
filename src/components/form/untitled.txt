@@ -116,3 +116,12 @@
             {touched.password && formError.password}
           </div>
         </div>
+        
+        
+        
+        
+        
+        
+        <button>Loading...</button>
+        
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>

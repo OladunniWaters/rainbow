@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-
-
+  import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+import LoadingSpinner from "../loader/LoadingSpinner";
 
 function Form() {
   const [isLoading, setIsLoading] = useState(false);
@@ -95,6 +96,7 @@ function Form() {
             setFormValues({})
             setIsLoading(false)
            // alert("success");
+           toast.success('incorrect values')
           } else {
           //  alert("failure");
           setFormValues({})
@@ -109,7 +111,9 @@ function Form() {
 
 
   return (
+  
     <div className="App">
+      <ToastContainer />
       <form onSubmit={handlesubmit}>
         <div className='box'>
           <input 
@@ -220,9 +224,9 @@ function Form() {
                  <input
                       className='form-input'
                       placeholder="Phone"
-                      type="number"
+                      type="text"
                       name="phone"
-                      minlength="10" maxlength="20"
+                      minlength="10" maxlength="15"
                       value={formValues.phone}
                       onChange={handleChange}
                   />
@@ -279,7 +283,7 @@ function Form() {
         </div>
         
    
-        {isLoading ? (<button>Loading...</button>)
+        {isLoading ? (<LoadingSpinner />)
        : ( <button type="submit">submit</button>) }
        
       </form>
