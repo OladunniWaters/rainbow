@@ -1,6 +1,8 @@
 import Home from './components/pages/home/Home';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
+import Track from './components/track/Track';
+import Contact from './components/contact/Contact';
 import {BrowserRouter as HashRouter, Routes, Route} from "react-router-dom";
 import  { useState } from 'react';
 
@@ -18,6 +20,8 @@ function App() {
       <Navbar changeTheme={changeTheme}/>
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/track" element={<Track />} />
+        <Route exact path="/contact" element={<Contact />} />
       </Routes>
        <Footer />
     </HashRouter> 
