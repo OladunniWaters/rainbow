@@ -1,0 +1,137 @@
+.navbar {
+  border-bottom: 3px solid #000;
+}
+
+.navbar-brand {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+font-family: 'R-Spectr', sans-serif;
+font-size: 20px;  
+margin-right: 100px;
+color: var(--color-text);
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+font-family: 'R-Spectr', sans-serif;
+font-size: 30px;  
+margin-right: 100px;
+color: var(--color-text);
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+font-family: 'R-Spectr', sans-serif;
+font-size: 30px;  
+margin-right: 100px;
+color: var(--color-text);
+}
+//extra large
+font-family: 'R-Spectr', sans-serif;
+font-size: 30px;  
+margin-right: 100px;
+color: var(--color-text);
+}
+
+
+
+.navbar-toggler-icon {
+  font-size: 20px;
+  border: none;
+  color: #000;
+  background: var(--color-bg);
+}
+
+.navbar-brand:hover {
+font-family: 'R-Spectr', sans-serif;
+font-size: 30px;  
+margin-right: 100px;
+color: var(--color-orange);
+}
+
+
+.nav-link {
+ font-family: 'Default Sans', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-text);
+  width: 150px;
+}
+
+.nav-link:hover {
+ font-family: 'Default Sans', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-orange);
+  width: 150px;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+
+.profile {
+ font-family: 'Default Sans', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-text);
+  width: 150px;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.profile:hover {
+ font-family: 'Default Sans', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-orange);
+  width: 150px;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+
+
+.shopping-cart {
+  display: flex;
+  margin-top: 15px;
+}
+
+
+.cart {
+ font-family: 'Default Sans', sans-serif;
+ font-weight: bold;
+  font-size: 20px;
+  color: var(--color-text);
+}
+
+.cart:hover {
+ font-family: 'Default Sans', sans-serif;
+ font-weight: bold;
+  font-size: 20px;
+  color: var(--color-orange);
+}
+
+
+.totalQuantity {
+  font-family: 'Default Sans', sans-serif;
+  font-weight: bold;
+  color: #000;
+  background-color: var(--color-orange);
+  border-radius: 50%;
+  text-align: center;
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+  margin-left: 5px;
+  margin-top: -5px;
+}
+
+
+.profile-cart-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15px;
+}
