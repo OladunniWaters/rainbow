@@ -36,10 +36,10 @@ function Navbar() {
                 <a class="nav-link" href="/contact">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#summer">Summer</a>
+                <a class="nav-link" href="/shipping">Shipping</a>
               </li>              
              <li class="nav-item">
-                <a class="nav-link" href="#autumn">Autumn</a>
+                <a class="nav-link" href="/refund">Refund</a>
               </li>
             </ul>
             
