@@ -5,6 +5,7 @@ import Track from './components/track/Track';
 import Contact from './components/contact/Contact';
 import Shipping from './components/policies/Shipping';
 import Refund from './components/policies/Refund';
+import Terms from './components/policies/Terms';
 import {BrowserRouter as HashRouter, Routes, Route} from "react-router-dom";
 import  { useState } from 'react';
 
@@ -26,6 +27,7 @@ function App() {
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/shipping" element={<Shipping />} />
         <Route exact path="/refund" element={<Refund />} />
+        <Route exact path="/terms" element={<Terms />} />
       </Routes>
        <Footer />
     </HashRouter> 

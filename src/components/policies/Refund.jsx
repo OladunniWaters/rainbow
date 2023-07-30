@@ -42,7 +42,6 @@ function Refund() {
              If more than 15 business days have passed since we’ve approved your return, please contact us at help.thedrencher@gmail.com.
           </p>
      </div>
-     </div>
   );
 }
 export default Refund;

@@ -39,7 +39,7 @@ function Navbar() {
                 <a class="nav-link" href="/shipping">Shipping</a>
               </li>              
              <li class="nav-item">
-                <a class="nav-link" href="/refund">Refund</a>
+                <a class="nav-link" href="/terms">Terms</a>
               </li>
             </ul>
             
