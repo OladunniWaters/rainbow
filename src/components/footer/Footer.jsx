@@ -16,12 +16,12 @@ function Footer() {
   return (
    <footer class='footer'>
           <div className='quick-link'>
-               <span class="copyright-1">Contact</span>
-               <span class="copyright-1">Privacy Policy</span>
-               <span class="copyright-1">Refund Policy</span>
-               <span class="copyright-1">Shipping Policy</span>
-               <span class="copyright-1">Terms of Service</span>
-               <span class="copyright-1">About Us</span>
+               <a class="copyright-1" href="/contact">Contact</a>
+               <a class="copyright-1" href="/privacy">Privacy Policy</a>
+               <a class="copyright-1" href="/refund">Refund Policy</a>
+               <a class="copyright-1" href="/shipping">Shipping Policy</a>
+               <a class="copyright-1" href="/terms">Terms of Service</a>
+               <a class="copyright-1" href="/aboutus">About Us</a>
            </div>
            
            <div className='copyright-cont'>
