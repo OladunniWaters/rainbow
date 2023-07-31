@@ -6,6 +6,8 @@ import Contact from './components/contact/Contact';
 import Shipping from './components/policies/Shipping';
 import Refund from './components/policies/Refund';
 import Terms from './components/policies/Terms';
+import Cart from './components/cart/Cart';
+import PaymentForm from './components/form/Form';
 import {BrowserRouter as HashRouter, Routes, Route} from "react-router-dom";
 import  { useState } from 'react';
 
@@ -28,6 +30,8 @@ function App() {
         <Route exact path="/shipping" element={<Shipping />} />
         <Route exact path="/refund" element={<Refund />} />
         <Route exact path="/terms" element={<Terms />} />
+        <Route exact path="/cart" element={<Cart />} />
+        <Route exact path="/paymentForm" element={<PaymentForm />} />
       </Routes>
        <Footer />
     </HashRouter> 
