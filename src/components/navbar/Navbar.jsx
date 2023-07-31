@@ -23,7 +23,7 @@ function Navbar() {
     <div>
        <nav class="navbar navbar-expand-xl">
         <div class="container">
-          <a class="navbar-brand" href="/homepage">WATERS</a>
+          <a class="navbar-brand" href="/">WATERS</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <RxHamburgerMenu className='navbar-toggler-icon'/>
           </button>
