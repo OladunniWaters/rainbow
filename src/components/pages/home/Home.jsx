@@ -1,12 +1,12 @@
 import Product from '../../product/Product';
-import Form from '../../form/Form';
+import LandingPage from '../landingpage/LandingPage';
 
 function Home() {
 
   return (
     <div className="home" >
        <Product />
-       <Form />
+       <LandingPage />
     </div>
   );
 }
