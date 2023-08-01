@@ -45,7 +45,7 @@ function Navbar() {
             
             <ul className='profile-cart-cont'>
              <li class="nav-item">
-                <a class="profile" href='/dashboard'>Profile</a>
+                <a class="profile" href='/productPage'>Product Page</a>
               </li>
               
             <div className='shopping-cart' onClick={() => navigate('/cart')}>
