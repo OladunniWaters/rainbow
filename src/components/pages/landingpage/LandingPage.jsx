@@ -1,4 +1,9 @@
 import './LandingPage.scss';
+import Hero from './Hero'
+import { FaAward  } from 'react-icons/fa';
+import { BsFillCheckCircleFill } from 'react-icons/bs';
+import { BiSupport } from 'react-icons/bi';
+
 
 import land1 from '../../../assets/find-your-perfect-angle-1500-test-2.png';
 import land2 from '../../../assets/works-empty-or-full-1500-test.png';
@@ -10,6 +15,7 @@ function LandingPage() {
 
   return (
     <div className="landing-page" >
+       <Hero />
   
       <div className='section-1'>
         <div className='section-1-img-cont'>
@@ -64,7 +70,31 @@ function LandingPage() {
      </div>
      
     
-     
+     <div className='warranty-cont'>
+         <div className='warranty-1-section'>
+             <FaAward className='warranty-1-icon'/>
+              <h3 className='warranty-1-section-h3'>1 YEAR WARRANTY</h3>
+               <p className='warranty-1-section-p'>
+                 We stand behind our VENTY and will make sure you are covered from any manufacture defect.
+            </p>
+         </div>
+         
+         <div className='warranty-1-section'>
+             <BsFillCheckCircleFill className='warranty-1-icon'/>
+              <h3 className='warranty-1-section-h3'>30 DAY MONEY BACK GUARANTEE</h3>
+               <p className='warranty-1-section-p'>
+                 Don't love it for some reason? Just contact our support and return it for a full product refund.
+            </p>
+         </div>
+         
+         <div className='warranty-1-section'>
+             <BiSupport className='warranty-1-icon'/>
+              <h3 className='warranty-1-section-h3'>EXCELLENT SUPPORT</h3>
+               <p className='warranty-1-section-p'>
+                Contact our live chat during business hours or contact us at support@ventyfan.com.
+            </p>
+         </div>
+     </div>
      
 
     </div>
