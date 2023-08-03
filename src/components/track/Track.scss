@@ -1,0 +1,236 @@
+
+.track-cont {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+}
+//extra large
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+padding: 200px 0px;
+}
+
+
+.track-header {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+text-align: center;
+font-size: 3rem;
+font-weight: bold; 
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+text-align: center;
+font-size: 3rem;
+font-weight: bold;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+text-align: center;
+font-size: 3rem;
+font-weight: bold; 
+}
+//extra large
+text-align: center;
+font-size: 3rem;
+font-weight: bold;
+}
+
+
+.track-p {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+text-align: center;
+font-size: 1.2rem;
+line-height: 2.5rem;  
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+text-align: center;
+font-size: 1.2rem;
+line-height: 2.5rem;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+text-align: center;
+font-size: 1.2rem;
+line-height: 2.5rem; 
+}
+//extra large
+text-align: center;
+font-size: 1.2rem;
+line-height: 2.5rem;
+}
+
+
+.track-input-cont {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+}
+//extra large
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;  
+gap: 20px;
+}
+
+
+
+
+.track-input {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  width: 250px;
+  padding: 10px 10px;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  width: 500px;
+  padding: 10px 10px;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  width: 500px;
+  padding: 10px 10px;
+}
+//extra large
+  width: 480px;
+  padding: 10px 20px;
+}
+
+
+
+
+.track-button {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+width: 150px;
+text-align: center;
+background: var(--color-orange);
+color: #fff;
+border: 2px solid var(--color-orange);
+padding: 10px 0px;
+font-size: 20px;
+font-weight: bold;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+width: 150px;
+text-align: center;
+background: var(--color-orange);
+color: #fff;
+border: 2px solid var(--color-orange);
+padding: 10px 0px;
+font-size: 20px;
+font-weight: bold;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+width: 150px;
+text-align: center;
+background: var(--color-orange);
+color: #fff;
+border: 2px solid var(--color-orange);
+padding: 10px 0px;
+font-size: 20px;
+font-weight: bold;
+}
+//extra large
+width: 150px;
+text-align: center;
+background: var(--color-orange);
+color: #fff;
+border: 1px solid var(--color-orange);
+padding: 8px 0px;
+font-size: 20px;
+font-weight: bold;
+transition: all ease 0.5s;
+}
+
+
+.track-button:hover {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+width: 150px;
+text-align: center;
+background: #fff;
+color: var(--color-orange);
+border: 2px solid var(--color-orange);
+padding: 10px 0px;
+font-size: 20px;
+font-weight: bold;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+width: 150px;
+text-align: center;
+background: #fff;
+color: var(--color-orange);
+border: 2px solid var(--color-orange);
+padding: 10px 0px;
+font-size: 20px;
+font-weight: bold;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+width: 150px;
+text-align: center;
+background: #fff;
+color: var(--color-orange);
+border: 2px solid var(--color-orange);
+padding: 10px 0px;
+font-size: 20px; 
+font-weight: bold;
+}
+//extra large
+width: 150px;
+text-align: center;
+background: #fff;
+color: var(--color-orange);
+border: 1px solid var(--color-orange);
+padding: 10px 0px;
+font-size: 20px;
+font-weight: bold;
+}
+
+
+
+
