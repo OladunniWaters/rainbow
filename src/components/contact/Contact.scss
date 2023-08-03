@@ -1,4 +1,320 @@
 
+.contact-cont {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+}
+//extra large
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+padding: 100px 0px;
+}
+
+
+.contact-header {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+}
+//extra large
+text-align: left;
+font-size: 3rem;
+font-weight: bold;
+}
+
+
+.contact-p {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+text-align: left;
+font-size: 1.2rem;
+width: 700px;
+line-height: 2.5rem;  
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+text-align: left;
+font-size: 1.2rem;
+width: 700px;
+line-height: 2.5rem;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+text-align: left;
+font-size: 1.2rem;
+width: 700px;
+line-height: 2.5rem; 
+}
+//extra large
+text-align: left;
+font-size: 1.2rem;
+width: 700px;
+line-height: 2.5rem;
+}
+
+
+.contact-section-1 {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+display: flex;
+flex-direction: row-reverse;
+justify-content: center;
+align-items: center;  
+}
+//extra large
+display: flex;
+flex-direction: row-reverse;
+justify-content: center;
+align-items: center;  
+gap: 20px;
+}
+
+
+
+.form-input-1 {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  width: 250px;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  width: 500px;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  width: 500px;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+}
+//extra large
+  width: 480px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+
+.form-input-2 {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  width: 250px;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  width: 500px;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  width: 500px;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+}
+//extra large
+  width: 480px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+
+.form-input-3 {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  width: 250px;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  width: 500px;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  width: 500px;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+}
+//extra large
+  width: 1000px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+
+.form-input-4 {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  width: 250px;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  width: 500px;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  width: 500px;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+}
+//extra large
+  width: 1000px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 80px;
+}
+
+
+.contact-button {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+width: 150px;
+text-align: center;
+background: var(--color-orange);
+color: #fff;
+border: 2px solid var(--color-orange);
+padding: 10px 0px;
+font-size: 20px;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+width: 150px;
+text-align: center;
+background: var(--color-orange);
+color: #fff;
+border: 2px solid var(--color-orange);
+padding: 10px 0px;
+font-size: 20px;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+width: 150px;
+text-align: center;
+background: var(--color-orange);
+color: #fff;
+border: 2px solid var(--color-orange);
+padding: 10px 0px;
+font-size: 20px; 
+}
+//extra large
+width: 150px;
+text-align: center;
+background: var(--color-orange);
+color: #fff;
+border: 2px solid var(--color-orange);
+padding: 10px 0px;
+font-size: 20px;
+transition: all ease 0.5s;
+}
+
+
+.contact-button:hover {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+width: 150px;
+text-align: center;
+background: #fff;
+color: var(--color-orange);
+border: 2px solid var(--color-orange);
+padding: 10px 0px;
+font-size: 20px;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+width: 150px;
+text-align: center;
+background: #fff;
+color: var(--color-orange);
+border: 2px solid var(--color-orange);
+padding: 10px 0px;
+font-size: 20px;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+width: 150px;
+text-align: center;
+background: #fff;
+color: var(--color-orange);
+border: 2px solid var(--color-orange);
+padding: 10px 0px;
+font-size: 20px; 
+}
+//extra large
+width: 150px;
+text-align: center;
+background: #fff;
+color: var(--color-orange);
+border: 2px solid var(--color-orange);
+padding: 10px 0px;
+font-size: 20px;
+}
+
+
+
+
 
 .form-container {
   //small

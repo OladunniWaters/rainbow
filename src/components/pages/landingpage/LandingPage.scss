@@ -1,35 +1,5 @@
 
 
-.landing-page1 {
-  //small
-@media screen and (min-width: 320px) and (max-width: 576px) {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;  
-}
-// medium
-@media screen and (min-width: 577px) and (max-width: 768px) {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;  
-}
-//large
-@media screen and (min-width: 769px) and (max-width: 992px) {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;  
-}
-//extra large
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;  
-}
-
-
 .section-1 {
   //small
 @media screen and (min-width: 320px) and (max-width: 576px) {

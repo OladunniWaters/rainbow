@@ -91,43 +91,39 @@ function Contact() {
 
   return (
   
-    <div className="App">
-      <h1>Contact</h1>
-      <p>Please do not hestitate to reach out to us about any questions or concerns and we will respond within 24hours.</p>
+    <div className="contact-cont">
+      <div>
+      <h1 className='contact-header'>Contact</h1>
+      <p className='contact-p'>Please do not hestitate to reach out to us about any questions or concerns and we will respond within 24hours.</p>
       
       <form onSubmit={handlesubmit}>
-        <div className='box'>
+        <div className='contact-section-1'>
           <input 
-          placeholder="Email"
+          className='form-input-1'
+          placeholder="Email *"
           type="text"
           name="email"
           value={formValues.email} onChange={handleChange} />
           <div className="errorMsg">
             {touched.email && formError.email}
           </div>
-        </div>
-        
-        
-          //name
-         <div>
-          <input
-            className='form-input'
+          
+            <input
+            className='form-input-2'
             placeholder="Name"
             type="text"
             name="name"
             value={formValues.name}
             onChange={handleChange}
-        />
+            />
         </div>
         
-        
-        
-        
-  //phone       
+      
+   
         <div>
         
          <input
-            className='form-input'
+            className='form-input-3'
             placeholder="Phone Number"
             type="text"
             name="phone"
@@ -136,10 +132,10 @@ function Contact() {
         />
       </div>
  
- //comment 
+ 
      <div>
          <input
-            className='form-input'
+            className='form-input-4'
             placeholder="Comment"
             type="text"
             name="comment"
@@ -153,10 +149,11 @@ function Contact() {
         
    
         {isLoading ? (<LoadingSpinner />)
-       : ( <button type="submit">Send</button>) }
+       : ( <button className='contact-button' type="submit">Send</button>) }
        
       </form>
     </div>
+     </div>
   );
 }
 

@@ -25,8 +25,8 @@ function Shop({product}) {
 
 
   return (
-    <div className='shop'>
-     <Carousel showStatus={false} showIndicators={false}>
+    <div className='shop-cont'>
+     <Carousel showStatus={false} showIndicators={false} showArrows={false}>
         <div>
           <img alt="" src={thumbnail} />
         </div>
@@ -48,7 +48,7 @@ function Shop({product}) {
                 <h3 className="item-title">{title}</h3>
                 <div className="discount-cont">
                      <p className="original-price">$100.00</p>
-                     <p className="discount-price">$29.99</p>
+                     <p className="discount-price">$59.99</p>
                      <p className="sale-tag">Sale </p>
                 </div>
                 <div className="star-cont">
@@ -59,12 +59,13 @@ function Shop({product}) {
                       <FaStar className='star'/>
                       <FaStar className='star'/>
                    </div>   
-                   <p className='star-rating'>(299)</p>
+                   <p className='star-rating'>(310)</p>
                 </div>
+                
+                
                 <div className="item-info">
-                    <p className="item-price">${price} </p>
-                    <p className="item-price">In stock, ready to ship </p>
-                  <button onClick={() => { animate();  dispatch(addToCart({id, title, thumbnail, price}))  }} id='button' className='item-button'>
+                    <p className="item-price">${price}</p>
+                  <button onClick={() => {dispatch(addToCart({id, title, thumbnail, price}))  }} id='button' className='item-button'>
                        BUY NOW
                   </button>
       
