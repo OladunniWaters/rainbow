@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import {addToCart} from '../redux/cartSlice';
 import './Item.scss'
 import React, { useState } from 'react';
-
+import { GoPlus } from 'react-icons/go';
 
 
 

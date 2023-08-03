@@ -1,18 +1,16 @@
 import './Product.scss'
-import Item from '../cart/Item'
+//import Item from '../cart/Item'
+import Shop from '../cart/Shop'
 import Data from '../../data/Data'
 
 
 function Product() {
 
-
-
   return (
           <div className=" Products">
-             <h1 className='products-header'>BEST SELLERS</h1>
                 <div className="products-display">
                          {Data.map(product => (
-                             <Item
+                             <Shop
                                 product={product}
                                 key={product.id} 
                              />
