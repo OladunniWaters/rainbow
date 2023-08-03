@@ -17,9 +17,9 @@ function Shop({product}) {
 
   return (
     <>
-     <Carousel autoPlay>
+     <Carousel autoPlay showStatus={false} showIndicators={false}>
     <div>
-      <img alt="" src="https://res.cloudinary.com/dzutmmwkf/image/upload/v1680324767/chrome_image_Apr_1_2023_4_32_24_AM_GMT_01_00_iitegu.webp" />
+      <img alt="" src={thumbnail} />
     </div>
     <div>
       <img alt="" src="https://res.cloudinary.com/dzutmmwkf/image/upload/v1680179150/Waters-Ecommerce/product2_vmtbfc.webp" />
