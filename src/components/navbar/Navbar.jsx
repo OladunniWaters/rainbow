@@ -44,10 +44,10 @@ function Navbar() {
                   Policies
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
-                  <li><a class="dropdown-item" href="#">Refund Policy</a></li>
-                  <li><a class="dropdown-item" href="#">Shipping Policy</a></li>
-                   <li><a class="dropdown-item" href="#">Terms of Service</a></li>
+                  <li><a class="dropdown-item" href="/refundpolicy">Refund Policy</a></li>
+                  <li><a class="dropdown-item" href="/shippingpolicy">Shipping Policy</a></li>
+                  <li><a class="dropdown-item" href="/terms"> Terms of Service</a></li>
+                  <li><a class="dropdown-item" href="/terms"></a>Privacy Policy</li>
                 </ul>
               </li>
             </ul>

@@ -1,6 +1,6 @@
 import './TotalItem.scss'
 import {useSelector} from 'react-redux'
-import { FaDollarSign } from 'react-icons/fa';
+
 
 
 function TotalItem() {
@@ -20,7 +20,7 @@ function TotalItem() {
   return (
     <div className="total">
       <div>
-        <p className="total-price">Grand Total : <FaDollarSign /> {getTotal().totalPrice}</p>
+        <p className="total-price">Subtotal : ${getTotal().totalPrice}</p>
          <a className='checkout-btn' href="/paymentForm">CHECKOUT</a>
       </div>
     </div>

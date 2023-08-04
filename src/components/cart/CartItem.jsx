@@ -1,7 +1,7 @@
 import './CartItem.scss';
 import { incrementQuantity, decrementQuantity, removeItem} from '../redux/cartSlice';
 import { useDispatch } from 'react-redux';
-import { FaTimes, FaDollarSign } from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa';
 
 
 
@@ -18,7 +18,7 @@ function CartItem({id, thumbnail , title, price, quantity=0}) {
         
         <div className="cartItem-info">
             <p className="cartItem-title">{title}</p>
-            <p className="cartItem-price"><FaDollarSign/>{price}</p>
+            <p className="cartItem-price">${price}</p>
         </div>    
         
         <div className='cartItem-incrDec'>

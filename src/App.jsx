@@ -28,8 +28,8 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/track" element={<Track />} />
         <Route exact path="/contact" element={<Contact />} />
-        <Route exact path="/shipping" element={<Shipping />} />
-        <Route exact path="/refund" element={<Refund />} />
+        <Route exact path="/shippingpolicy" element={<Shipping />} />
+        <Route exact path="/refundpolicy" element={<Refund />} />
         <Route exact path="/terms" element={<Terms />} />
         <Route exact path="/cart" element={<Cart />} />
         <Route exact path="/paymentForm" element={<PaymentForm />} />

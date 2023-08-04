@@ -1,0 +1,122 @@
+
+.refund-cont {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+}
+//extra large
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center; 
+padding: 100px 0px;
+}
+
+
+.refund-header {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+text-align: left;
+font-size: 3rem;
+font-weight: bold; 
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+text-align: left;
+font-size: 3rem;
+font-weight: bold;;  
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+text-align: left;
+font-size: 3rem;
+font-weight: bold;
+}
+//extra large
+text-align: left;
+font-size: 3rem;
+font-weight: bold; 
+}
+
+
+.refund-p {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+text-align: left;
+font-size: 1.2rem;
+width: 700px;
+line-height: 2.5rem;  
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+text-align: left;
+font-size: 1.2rem;
+width: 700px;
+line-height: 2.5rem;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+text-align: left;
+font-size: 1.2rem;
+width: 700px;
+line-height: 2.5rem; 
+}
+//extra large
+text-align: left;
+font-size: 1.2rem;
+width: 700px;
+line-height: 2.5rem;
+}
+
+
+.refund-small-header {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+text-align: left;
+font-size: 2rem;
+width: 700px;
+margin-top: 40px;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+text-align: left;
+font-size: 2rem;
+width: 700px;
+margin-top: 40px;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+text-align: left;
+font-size: 2rem;
+width: 700px;
+margin-top: 40px;
+}
+//extra large
+text-align: left;
+font-size: 2rem;
+width: 700px;
+margin-top: 40px;
+}
+
+
+
+
+
+
