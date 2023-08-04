@@ -7,7 +7,6 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 background: var(--color-text);
-padding-top: 10px;
 }
 // medium
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -16,7 +15,6 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 background: var(--color-text);
-padding-top: 10px;
 }
 //large
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -25,7 +23,6 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 background: var(--color-text);
-padding-top: 10px;
 }
 //extra large
 display: flex;
@@ -33,7 +30,6 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 background: var(--color-text);
-padding-top: 10px;
 }
 
 
@@ -41,52 +37,28 @@ padding-top: 10px;
 .banner-p {
   //small
 @media screen and (min-width: 320px) and (max-width: 576px) {
-font-family: 'R-Spectr', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-display: flex;
-align-items: center;
-justify-content: center;
-color: var(--color-orange);
+font-size: 20px;
+color: #fff;
 text-transform: uppercase;
 text-align: center;
 }
 // medium
 @media screen and (min-width: 577px) and (max-width: 768px) {
-font-family: 'R-Spectr', sans-serif;
-font-style: normal;
-font-weight: 400;
 font-size: 20px;
-display: flex;
-align-items: center;
-justify-content: center;
-color: var(--color-orange);
+color: #fff;
 text-transform: uppercase;
 text-align: center;
 }
 //large
 @media screen and (min-width: 769px) and (max-width: 992px) {
-font-family: 'R-Spectr', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-display: flex;
-align-items: center;
-justify-content: center;
-color: var(--color-orange);
+font-size: 20px;
+color: #fff;
 text-transform: uppercase;
 text-align: center;
 }
 //extra large
-font-family: 'R-Spectr', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-display: flex;
-align-items: center;
-justify-content: center;
-color: var(--color-orange);
+font-size: 20px;
+color: #fff;
 text-transform: uppercase;
 text-align: center;
 }

@@ -4,6 +4,17 @@
 
   import 'react-toastify/dist/ReactToastify.css';
   import LoadingSpinner from "../loader/LoadingSpinner";
+  
+import card1 from '../../assets/Visa.png';
+import card2 from '../../assets/Mastercard.png';
+import card3 from '../../assets/Maestro.png';
+import card4 from '../../assets/Amex.png';
+
+import { BsFillRecordCircleFill, BsQuestionCircle  } from 'react-icons/bs';
+import { FiSearch, FiLock  } from 'react-icons/fi';
+import { LiaTimesSolid } from 'react-icons/lia';
+
+import land3 from '../../assets/no-iphone-no-problem-1500-test.png';
 
 function Form() {
   const [isLoading, setIsLoading] = useState(false);
@@ -114,14 +125,14 @@ function Form() {
 
   return (
   
-    <div className="payment-form-cont">
+    <div>
     
       <ToastContainer 
        position="top-center"
       />
       
       
-      <form onSubmit={handlesubmit}>
+      <form onSubmit={handlesubmit} className="payment-form-cont">
         <div className='box'>
           <h1>Contact</h1>
           <input 
@@ -155,7 +166,7 @@ function Form() {
         <div className='payment-name-cont'>
         
          <input
-            className='form-input'
+            className='payment-name'
             placeholder="First name"
             type="text"
             name="firstname"
@@ -164,7 +175,7 @@ function Form() {
         />
         
          <input
-            className='form-input'
+            className='payment-name'
             placeholder="Last name"
             type="text"
             name="lastname"
@@ -196,10 +207,10 @@ function Form() {
                   />
             </div>
             
-//city      
+   
             <div className='payment-address-cont-2'>
                 <input
-                      className='form-input'
+                      className='payment-city'
                       placeholder="City"
                       type="text"
                       name="city"
@@ -208,7 +219,7 @@ function Form() {
                   />
                   
                    <input
-                      className='form-input'
+                      className='payment-city'
                       placeholder="State"
                       type="text"
                       name="state"
@@ -217,7 +228,7 @@ function Form() {
                   />
                   
                    <input
-                      className='form-input'
+                      className='payment-city'
                       placeholder="ZIP code"
                       type="text"
                       name="zipcode"
@@ -227,10 +238,10 @@ function Form() {
                   />
             </div>
             
-     //phone number       
+     
             <div>
                  <input
-                      className='form-input'
+                      className='payment-phone'
                       placeholder="Phone"
                       type="text"
                       name="phone"
@@ -245,23 +256,34 @@ function Form() {
         
         
         
+        <div>
+         <h1>Payment</h1>
+         <p>All transactions are secure and encrypted</p>
+         <div className='payment-cc-cont'>
+            <div>
+               <p>Credit card</p>
+               <div className='card-image-cont'>
+                 <img src={card1} alt='card-image' className='card'/>
+                 <img src={card2} alt='card-image' className='card'/>
+                 <img src={card3} alt='card-image' className='card'/>
+                 <img src={card4} alt='card-image' className='card'/>
+               </div>
+            </div>
+            <input
+              className='form-input'
+              placeholder="Card Number"
+              type="text"
+              name="cardnumber"
+              minlength="13"
+              maxlength="16"
+              pattern="([A-z0-9À-ž\s]){10,}"
+              value={formValues.cardnumber}
+              onChange={handleChange}
+          />
         
-        //credit card
-         <div>
-          <input
-            className='form-input'
-            placeholder="Card Number"
-            type="text"
-            name="cardnumber"
-            minlength="13"
-            maxlength="16"
-            pattern="([A-z0-9À-ž\s]){10,}"
-            value={formValues.cardnumber}
-            onChange={handleChange}
-        />
-        
+        <div className='payment-cc-cont-2'>
          <input
-            className='form-input'
+            className='payment-security'
             placeholder="Expiration date (MM/YY)"
             type="text"
             name="expdate"
@@ -271,7 +293,7 @@ function Form() {
         />
         
          <input
-            className='form-input'
+            className='payment-security'
             placeholder="Security code"
             type="text"
             name="cvv"
@@ -279,6 +301,7 @@ function Form() {
             value={formValues.cvv}
             onChange={handleChange}
         />
+        </div>
         
          <input
             className='form-input'
@@ -288,13 +311,62 @@ function Form() {
             value={formValues.cardname}
             onChange={handleChange}
         />
-        </div>
         
+        </div>
+              <div>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+                <label for="vehicle1">Use shipping address as biling address</label>
+            </div>
+       </div> 
    
         {isLoading ? (<LoadingSpinner />)
-       : ( <button type="submit">submit</button>) }
+       : ( <button type="submit">Pay now</button>) }
+       
+       
+        <div>
+              <h1>Order summary</h1>
+              <div>
+                   <div className='section-1-img-cont'>
+                    <img src={land3} alt='land-image' className='land-image'/>
+                    <p>Ringo</p>
+                  </div>
+                  <p>$59.9</p>
+              </div>
+              
+              <div>
+                    <input
+                        className='form-input'
+                        placeholder="Discount code"
+                        type="text"
+                        name="discount code"
+                        value={formValues.discountcode}
+                        onChange={handleChange}
+                    />
+                    
+                    <button>Apply</button>
+              </div>
+              
+              <div>
+                  <div>
+                      <p>Subtotal</p>
+                      <p>$59.9</p>
+                  </div>
+                  
+                   <div>
+                      <p>Shipping</p>
+                      <p>Free</p>
+                  </div>
+                  
+                   <div>
+                      <p>Total</p>
+                      <p>$59.9</p>
+                  </div>
+              </div>
+        </div>
        
       </form>
+      
+     
     </div>
   );
 }

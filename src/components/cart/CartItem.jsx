@@ -2,6 +2,7 @@ import './CartItem.scss';
 import { incrementQuantity, decrementQuantity, removeItem} from '../redux/cartSlice';
 import { useDispatch } from 'react-redux';
 import { FaTimes } from 'react-icons/fa';
+import { RiDeleteBin6Line } from 'react-icons/ri';
 
 
 
@@ -31,7 +32,7 @@ function CartItem({id, thumbnail , title, price, quantity=0}) {
         <button
           className='remove-button' 
           onClick={() => dispatch(removeItem(id))}>
-            <FaTimes/>
+            <RiDeleteBin6Line/>
         </button>
       </div>
 

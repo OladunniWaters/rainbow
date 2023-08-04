@@ -55,8 +55,33 @@ align-items: center;
 }
 
 
+.payment-name {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  width: 245px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  width: 245px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  width: 245px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+//extra large
+  width: 245px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
 
-.payment-name-cont2 {
+
+.payment-name-cont {
   //small
 @media screen and (min-width: 320px) and (max-width: 576px) {
 display: flex;
@@ -83,6 +108,7 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
+gap: 10px;
 }
 
 
@@ -144,7 +170,148 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
+gap: 10px;
 }
+
+.payment-city {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  width: 245px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  width: 245px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  width: 245px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+//extra large
+  width: 160px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+
+.payment-phone {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  width: 250px;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  width: 500px;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  width: 500px;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+}
+//extra large
+  width: 500px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+
+.payment-cc-cont {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+//extra large
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+
+.payment-cc-cont-2 {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+//extra large
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+
+.payment-security {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  width: 245px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  width: 245px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  width: 245px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+//extra large
+  width: 245px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+
 
 
 

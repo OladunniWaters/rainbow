@@ -1,4 +1,5 @@
 import Home from './components/pages/home/Home';
+import Banner from './components/banner/Banner';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Track from './components/track/TrackID';
@@ -23,6 +24,7 @@ function App() {
     <>
  <div className="app" data-theme={theme}>
     <HashRouter>
+      <Banner />
       <Navbar changeTheme={changeTheme}/>
       <Routes>
         <Route exact path="/" element={<Home />} />

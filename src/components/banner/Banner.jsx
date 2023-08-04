@@ -5,7 +5,7 @@ function Banner() {
 
   return (
     <div className="banner" >
-        Free Worldwide Shipping
+        <p className='banner-p'>Free Worldwide Shipping</p>
     </div>
   );
 }
