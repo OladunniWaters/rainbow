@@ -114,7 +114,7 @@ function Form() {
 
   return (
   
-    <div className="payment-form-cont">
+    <div className="App">
     
       <ToastContainer 
        position="top-center"
@@ -123,9 +123,7 @@ function Form() {
       
       <form onSubmit={handlesubmit}>
         <div className='box'>
-          <h1>Contact</h1>
           <input 
-          className='payment-email'
           placeholder="Email"
           type="text"
           name="email"
@@ -133,15 +131,11 @@ function Form() {
           <div className="errorMsg">
             {touched.email && formError.email}
           </div>
-          
-           <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-            <label for="vehicle1">Email me with news and offers</label>
         </div>
         
         
-        
+          //country
          <div>
-         <h1>Delivery</h1>
           <input
             className='form-input'
             placeholder="Country/Region"
@@ -152,7 +146,11 @@ function Form() {
         />
         </div>
         
-        <div className='payment-name-cont'>
+        
+        
+        
+  //fullname        
+        <div>
         
          <input
             className='form-input'
@@ -175,8 +173,9 @@ function Form() {
         </div>
         
         
+         //Address      
         <div>
-              <div className='payment-address-cont'>
+              <div>
                    <input
                       className='form-input'
                       placeholder="Address"
@@ -197,7 +196,7 @@ function Form() {
             </div>
             
 //city      
-            <div className='payment-address-cont-2'>
+            <div>
                 <input
                       className='form-input'
                       placeholder="City"
