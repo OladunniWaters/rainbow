@@ -1,4 +1,6 @@
 import './ReviewItem.scss'
+import { FaStar } from 'react-icons/fa';
+import { BsCheckCircleFill } from 'react-icons/bs';
 
 
 function ReviewItem({reviews}) {
@@ -6,32 +8,37 @@ function ReviewItem({reviews}) {
 
 
   return (
-    <div className="review" >
-
-        <div>
-            <div></div>
-            <p>299 Reviews</p>
-        </div>
-        
-         <div>
-                 <div> 
+    <div className="review-cont" >
+              <div className="review-image-cont">
                      <img
                       src={customerImage}
-                      alt="item"
-                      className='item-image'
+                      alt="review-image"
+                      className='review-image'
                     />
-                </div>
-             <div>
-                 <p>Feline V.</p>
-                 <p>Verified</p>
+              </div>   
+              
+          <div className="review-item-cont">      
+             <div className="review-name-cont">
+                 <p className="customer-name">{customerName}</p>
+                 <p className="review-verified"><BsCheckCircleFill className="review-checker"/>Verified</p>
              </div>
-              <p>7/14/2023</p>
-              <div>Stars</div>
-               <p>Alle 3 de smaken zijn heerlijk. Verfrissend en goede sterkte. Net vanmorgen mijn 3e vulling gebruikt dus ook dat valt mij alles mee hoelang je er mee doet. Ik ben nu al 1,5 week volledig gestopt met roken hiermee! Goed vol te houden en echt een aanrader!! Nooit gedacht dat het zó goed zou werken!
-               </p>
-               <hr />
-               <p>Journey Pack</p>
-         </div>
+             
+              <p className="review-date">{date}</p>
+              
+              <div className="review-star-cont">
+                     <FaStar className='star'/>
+                      <FaStar className='star'/>
+                      <FaStar className='star'/>
+                      <FaStar className='star'/>
+                      <FaStar className='star'/>
+              </div>
+         
+              <p className="review-p">{review}</p>
+         </div>     
+              
+               
+               <hr className="review-hr"/>
+               <p className="review-productname">Journey Pack</p>
     </div>
   );
 }
