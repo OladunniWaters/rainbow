@@ -1,6 +1,5 @@
 import "./NavbarCss.scss";
-import { FiSearch } from 'react-icons/fi';
-import { FaBell } from 'react-icons/fa';
+import { RxHamburgerMenu } from 'react-icons/rx';
 
 import {useNavigate} from 'react-router-dom'
 import { useSelector } from 'react-redux';
@@ -25,9 +24,16 @@ function NavbarCss() {
     <div class="navbar">
        <div className='navbar-cont container'>
           <div className='offcanvas-cont'>
+          <div className='cart-cont-1'>
+                <div className='shopping-cart' onClick={() => navigate('/cart')}>
+                  <BsHandbag className='cart' />
+                  <div className='totalQuantity-cont'><p className='totalQuantity'> {getTotalQuantity() || 0}</p></div>
+                </div>
+           </div>
+          
            <a class="navbar-brand" href="/">Ringo</a>
-            <button class="btn btn-primary offcanvas-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-                Toggle static offcanvas
+            <button class="offcanvas-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                <RxHamburgerMenu className='hamburger'/>
               </button>
               
               <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
@@ -41,6 +47,7 @@ function NavbarCss() {
                   </div>
                 </div>
               </div>
+  
            </div>   
               
             <ul class="nav-link-cont">
