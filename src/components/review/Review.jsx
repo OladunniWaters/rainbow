@@ -1,13 +1,25 @@
 import './Review.scss'
 import ReviewItem from './ReviewItem'
 import Reviews from '../../data/Review'
-
+import { FaStar } from 'react-icons/fa';
 
 function Review() {
 
   return (
-          <div className=" Products">
-                <div className="products-display">
+          <div className=" Products"> 
+                <h1 className='review-header'>Don't take our word for it</h1>
+                 <div className="star-cont">
+                   <div>
+                      <FaStar className='star'/>
+                      <FaStar className='star'/>
+                      <FaStar className='star'/>
+                      <FaStar className='star'/>
+                      <FaStar className='star'/>
+                   </div>   
+                   <p className='star-rating'>(310)</p>
+                </div>
+                 
+                <div className="reviews-display">
                          {Reviews.map(reviews => (
                              <ReviewItem
                                 reviews={reviews}

@@ -10,6 +10,8 @@ import land2 from '../../../assets/works-empty-or-full-1500-test.png';
 import land3 from '../../../assets/no-iphone-no-problem-1500-test.png';
 import land4 from '../../../assets/bloggif_641b5ebb12cbf.gif';
 
+import Review from '../../review/Review';
+
 
 function LandingPage() {
 
@@ -68,7 +70,7 @@ function LandingPage() {
             </p>
         </div>
      </div>
-     
+    
     
      <div className='warranty-cont'>
          <div className='warranty-1-section'>
@@ -96,7 +98,7 @@ function LandingPage() {
          </div>
      </div>
      
-
+      
     </div>
   );
 }

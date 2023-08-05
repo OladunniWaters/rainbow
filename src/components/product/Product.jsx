@@ -2,7 +2,7 @@ import './Product.scss'
 //import Item from '../cart/Item'
 import Shop from '../cart/Shop'
 import Data from '../../data/Data'
-
+import Review from '../review/Review';
 
 function Product() {
 
@@ -17,6 +17,8 @@ function Product() {
   
                          ))}
                    </div>
+                   
+                        <Review />
               </div>
   )
 }
