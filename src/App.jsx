@@ -1,6 +1,6 @@
 import Home from './components/pages/home/Home';
 import Banner from './components/banner/Banner';
-import Navbar from './components/navbar/Navbar';
+import Review from './components/review/Review';
 import NavbarCss from './components/navbar/NavbarCss';
 import Footer from './components/footer/Footer';
 import Track from './components/track/TrackID';
@@ -29,7 +29,7 @@ function App() {
       <NavbarCss changeTheme={changeTheme}/>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/track" element={<Track />} />
+        <Route exact path="/track" element={<Review />} />
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/shippingpolicy" element={<Shipping />} />
         <Route exact path="/refundpolicy" element={<Refund />} />
