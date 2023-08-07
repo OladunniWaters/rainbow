@@ -25,63 +25,63 @@ function Shop({product}) {
 
 
   return (
-    <div className='shop-cont'>
-     <Carousel showStatus={false} showIndicators={false} showArrows={false}>
-        <div>
-          <img alt="" src={thumbnail} />
+    <div className='container'>
+        <div className='shop-cont'>
+         <Carousel showStatus={false} showIndicators={false} showArrows={false}>
+            <div className='prdouct-image-item'>
+              <img alt="" src={thumbnail} />
+            </div>
+            <div>
+              <img alt="" src="https://res.cloudinary.com/dzutmmwkf/image/upload/v1680179150/Waters-Ecommerce/product2_vmtbfc.webp" />
+            </div>
+            <div>
+              <img alt="" src="https://res.cloudinary.com/dzutmmwkf/image/upload/v1680179154/Waters-Ecommerce/product6_csfrpc.webp" />
+            </div>
+           
+      </Carousel>
+        
+        <div className="item">
+                    <h3 className="item-title">{title}</h3>
+                    <div className="star-cont">
+                       <div>
+                          <FaStar className='star'/>
+                          <FaStar className='star'/>
+                          <FaStar className='star'/>
+                          <FaStar className='star'/>
+                          <FaStar className='star'/>
+                       </div>   
+                       <p className='star-rating'>(310)</p>
+                    </div>
+                    
+                       <p className="sale-tag"> Summer Sale </p>
+                    
+                    <div className="discount-cont">
+                         <p className="original-price">$100.00</p>
+                         <p className="discount-price">${price}</p>
+                    </div>
+                  
+                    
+                    
+                    <div className="item-info">
+                        <p className="item-price"></p>
+                      <button onClick={() => {dispatch(addToCart({id, title, thumbnail, price}))  }} id='button' className='item-button'>
+                           BUY NOW
+                      </button>
+          
+                        <div className='card-image-cont'>
+                           <img src={card1} alt='card-image' className='card'/>
+                           <img src={card2} alt='card-image' className='card'/>
+                           <img src={card3} alt='card-image' className='card'/>
+                           <img src={card4} alt='card-image' className='card'/>
+                           <img src={card5} alt='card-image' className='card'/>
+                           <img src={card6} alt='card-image' className='card'/>
+                           <img src={card7} alt='card-image' className='card'/>
+                         </div>
+          
+                </div>      
         </div>
-        <div>
-          <img alt="" src="https://res.cloudinary.com/dzutmmwkf/image/upload/v1680179150/Waters-Ecommerce/product2_vmtbfc.webp" />
         </div>
-        <div>
-          <img alt="" src="https://res.cloudinary.com/dzutmmwkf/image/upload/v1680179154/Waters-Ecommerce/product6_csfrpc.webp" />
-        </div>
-        <div>
-          <img alt="" src="https://res.cloudinary.com/dzutmmwkf/image/upload/v1680324764/pngwing.com_o2wdnz.webp" />
-        </div>
-        <div>
-          <img alt="" src="https://res.cloudinary.com/dzutmmwkf/image/upload/v1680179151/Waters-Ecommerce/product3_vkleqp.webp" />
-        </div>
-  </Carousel>
-    
-    <div className="item">
-                <h3 className="item-title">{title}</h3>
-                <div className="discount-cont">
-                     <p className="original-price">$100.00</p>
-                     <p className="discount-price">$59.99</p>
-                     <p className="sale-tag">Sale </p>
-                </div>
-                <div className="star-cont">
-                   <div>
-                      <FaStar className='star'/>
-                      <FaStar className='star'/>
-                      <FaStar className='star'/>
-                      <FaStar className='star'/>
-                      <FaStar className='star'/>
-                   </div>   
-                   <p className='star-rating'>(310)</p>
-                </div>
-                
-                
-                <div className="item-info">
-                    <p className="item-price">${price}</p>
-                  <button onClick={() => {dispatch(addToCart({id, title, thumbnail, price}))  }} id='button' className='item-button'>
-                       BUY NOW
-                  </button>
-      
-                    <div className='card-image-cont'>
-                       <img src={card1} alt='card-image' className='card'/>
-                       <img src={card2} alt='card-image' className='card'/>
-                       <img src={card3} alt='card-image' className='card'/>
-                       <img src={card4} alt='card-image' className='card'/>
-                       <img src={card5} alt='card-image' className='card'/>
-                       <img src={card6} alt='card-image' className='card'/>
-                       <img src={card7} alt='card-image' className='card'/>
-                     </div>
-      
-            </div>      
-    </div>
-    </div>
+     </div>     
   )
 }
 
