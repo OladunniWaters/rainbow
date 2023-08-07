@@ -1,4 +1,7 @@
  import './Form.scss'
+ 
+ import {useSelector} from 'react-redux'
+ 
   import { useState, useEffect } from "react";
   import { ToastContainer, toast } from 'react-toastify';
 
@@ -120,6 +123,22 @@ function Form() {
     }
   };
   
+
+
+  const cart = useSelector((state) => state.cart)
+
+  const getTotal = () => {
+    let totalQuantity = 0
+    let totalPrice = 0
+    cart.forEach(item => {
+      totalQuantity += item.quantity
+      totalPrice += item.price * item.quantity
+    })
+    return {totalPrice, totalQuantity}
+  }
+ 
+
+
 
 
 
@@ -328,11 +347,54 @@ function Form() {
                 <input className='checkbox' type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
                 <label className='checkbox-label' for="vehicle1">Use shipping address as billing address</label>
             </div>
+            
+          <h1 className='payment-form-header'>Order summary</h1> 
+          
+          <div className='order-s'>
+               <div className='order-summary-1'>
+                       <div className='order-img-cont'>
+                        <img src={land3} alt='land-image' className='order-image'/>
+                        <p>Ringo</p>
+                      </div>
+                      <p>${getTotal().totalPrice}</p>
+                  </div>
+               <div>
+                    <input
+                        className='order-dicount'
+                        placeholder="Discount code"
+                        type="text"
+                        name="discount code"
+                        value={formValues.discountcode}
+                        onChange={handleChange}
+                    />
+                    
+                    <button className='order-dicount-btn'>Apply</button>
+              </div>
+               
+              <div>
+                  <div className='order-summary'>
+                      <p>Subtotal</p>
+                      <p>${getTotal().totalPrice}</p>
+                  </div>
+                  
+                   <div className='order-summary'>
+                      <p>Shipping</p>
+                      <p>Free</p>
+                  </div>
+                  
+                   <div className='order-summary'>
+                      <p>Total</p>
+                      <p>${getTotal().totalPrice}</p>
+                  </div>
+              </div> 
+              
+            </div>  
+            
        </div> 
-   
+       
         {isLoading ? (<LoadingSpinner />)
        : ( <button className='money-button' type="submit">Pay now</button>) }
-       
+
        
       </form>
       
