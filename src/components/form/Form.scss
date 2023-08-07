@@ -6,7 +6,6 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-overflow: hidden;
 }
 // medium
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -14,7 +13,6 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-overflow: hidden;
 }
 //large
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -22,7 +20,6 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-overflow: hidden;
 }
 //extra large
 display: flex;
@@ -30,7 +27,6 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 padding: 100px 0px;
-overflow: hidden;
 }
 
 
@@ -131,6 +127,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+position: relative;
 }
 // medium
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -138,6 +135,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+position: relative;
 }
 //large
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -145,12 +143,14 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+position: relative;
 }
 //extra large
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+position: relative;
 }
 
 
@@ -1021,155 +1021,6 @@ margin-bottom: 20px;
 }
 
 
-.absolute-icon-address {
-  //smalll
-  position: absolute;
-  margin-top: 40px;
-  margin-left: 180px;
-  color: grey;
-
-// medium
-@media screen and (min-width: 577px) and (max-width: 768px) {
-  position: absolute;
-  margin-top: 25px;
-  margin-left: 205px;
-  color: grey;
-}
-//large
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  position: absolute;
-  margin-top: 25px;
-  margin-left: 205px;
-  color: grey;
-}
-//extra large
-  position: absolute;
-  margin-top: 25px;
-  margin-left: 205px;
-  color: grey;
-}
-
-
-.absolute-icon-phone {
-  //smalll
-  position: absolute;
-  margin-top: 15px;
-  margin-left: 0px;
-  color: grey;; 
-
-// medium
-@media screen and (min-width: 577px) and (max-width: 768px) {
-  position: absolute;
-  margin-top: 15px;
-  margin-left: 450px;
-  color: grey;
-}
-//large
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  position: absolute;
-  margin-top: 15px;
-  margin-left: 450px;
-  color: grey;
-}
-//extra large
-  position: absolute;
-  margin-top: 15px;
-  margin-left: 450px;
-  color: grey;
-}
-
-
-.absolute-icon-cardnum {
-  //smalll
-  position: absolute;
-  margin-top: 100px;
-  margin-left: -100px;
-  color: grey;
-
-// medium
-@media screen and (min-width: 577px) and (max-width: 768px) {
-  position: absolute;
-  margin-top: -40px;
-  margin-left: 200px;
-  color: grey;
-}
-//large
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  position: absolute;
-  margin-top: -40px;
-  margin-left: 200px;
-  color: grey;
-}
-//extra large
-  position: absolute;
-  margin-top: -40px;
-  margin-left: 200px;
-  color: grey;
-}
-
-
-.absolute-icon-cvv {
-  //smalll
-  position: absolute;
-  margin-top: -10px;
-  margin-left: 200px;
-  color: grey;
-
-// medium
-@media screen and (min-width: 577px) and (max-width: 768px) {
-  position: absolute;
-  margin-top: -10px;
-  margin-left: 200px;
-  color: grey;
-}
-//large
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  position: absolute;
-  margin-top: -10px;
-  margin-left: 200px;
-  color: grey; 
-}
-//extra large
-  position: absolute;
-  margin-top: -10px;
-  margin-left: 200px;
-  color: grey;
-}
-
-
-
-
-.absolute-icon-cardname {
-  //smalll
-  position: absolute;
-  margin-top: 95px;
-  margin-left: 200px;
-  color: grey;
-
-// medium
-@media screen and (min-width: 577px) and (max-width: 768px) {
-  position: absolute;
-  margin-top: 95px;
-  margin-left: 200px;
-  color: grey;
-}
-//large
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  position: absolute;
-  margin-top: 95px;
-  margin-left: 200px;
-  color: grey;
-}
-//extra large
-  position: absolute;
-  margin-top: 95px;
-  margin-left: 200px;
-  color: grey;
-}
-
-
-
-
 .order-s  {
   //small
 @media screen and (min-width: 320px) and (max-width: 576px) {
@@ -1185,4 +1036,168 @@ margin-bottom: 20px;
 }
 //extra large
   width: 500px;
+}
+
+.payment-address-cont {
+  position: relative;
+}
+
+
+.absolute-icon-address {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+position: absolute;
+top: 15px;
+left: 300px;
+color: grey;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+position: absolute;
+top: 15px;
+left: 450px;
+color: grey;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+position: absolute;
+top: 15px;
+left: 450px;
+color: grey;
+}
+//extra large
+position: absolute;
+top: 15px;
+left: 470px;
+color: grey;
+}
+
+
+.absolute-icon-phone-cont {
+  position: relative;
+}
+
+
+.absolute-icon-phone {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+position: absolute;
+top: 15px;
+left: 300px;
+color: grey;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+position: absolute;
+top: 15px;
+left: 450px;
+color: grey;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+position: absolute;
+top: 15px;
+left: 450px;
+color: grey;
+}
+//extra large
+position: absolute;
+top: 15px;
+left: 470px;
+color: grey;
+}
+
+
+.absolute-icon-cardnum-cont {
+  position: relative;
+}
+
+
+.absolute-icon-cardnum {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+position: absolute;
+top: 15px;
+left: 300px;
+color: grey;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+position: absolute;
+top: 15px;
+left: 400px;
+color: grey;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+position: absolute;
+top: 15px;
+left: 400px;
+color: grey;
+}
+//extra large
+position: absolute;
+top: 15px;
+left: 400px;
+color: grey;
+}
+
+
+.absolute-icon-cvv {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+position: absolute;
+top: 15px;
+left: 300px;
+color: grey;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+position: absolute;
+top: 15px;
+left: 170px;
+color: grey;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+position: absolute;
+top: 15px;
+left: 170px;
+color: grey;
+}
+//extra large
+position: absolute;
+top: 15px;
+left: 170px;
+color: grey;
+}
+
+
+.absolute-icon-cardname {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+position: absolute;
+top: 15px;
+left: 300px;
+color: grey;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+position: absolute;
+top: 15px;
+left: 400px;
+color: grey;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+position: absolute;
+top: 15px;
+left: 400px;
+color: grey;
+}
+//extra large
+position: absolute;
+top: 15px;
+left: 400px;
+color: grey;
 }

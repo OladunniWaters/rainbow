@@ -274,7 +274,7 @@ function Form() {
             </div>
             
      
-            <div>
+            <div className='absolute-icon-phone-cont'>
                 <BsQuestionCircle className='absolute-icon-phone'/>
                  <input
                       className='payment-phone'
@@ -314,20 +314,21 @@ function Form() {
                          <img src={card4} alt='card-image' className='card'/>
                        </div>
                 </div>
-            
-                    <FiLock className='absolute-icon-cardnum'/>
-                    <input
-                      className='creditcard-number'
-                      placeholder="Card number"
-                      required
-                      type="text"
-                      name="cardnumber"
-                      minlength="13"
-                      maxlength="16"
-                      pattern="([A-z0-9À-ž\s]){10,}"
-                      value={formValues.cardnumber}
-                      onChange={handleChange}
-                  />
+                    <div className='absolute-icon-cardnum-cont'>
+                        <FiLock className='absolute-icon-cardnum'/>
+                        <input
+                          className='creditcard-number'
+                          placeholder="Card number"
+                          required
+                          type="text"
+                          name="cardnumber"
+                          minlength="13"
+                          maxlength="16"
+                          pattern="([A-z0-9À-ž\s]){10,}"
+                          value={formValues.cardnumber}
+                          onChange={handleChange}
+                      />
+                  </div>
                 
                 <div className='payment-cc-cont-2'>
                      <input
@@ -341,30 +342,33 @@ function Form() {
                         onChange={handleChange}
                     />
                     
-                    <BsQuestionCircle className='absolute-icon-cvv'/>
-                     <input
-                        className='payment-security'
-                        placeholder="Security code"
-                        required
-                        type="text"
-                        name="cvv"
-                        minlength="3" maxlength="4"
-                        value={formValues.cvv}
-                        onChange={handleChange}
-                    />
+                      <div className='absolute-icon-cardnum-cont'>
+                          <BsQuestionCircle className='absolute-icon-cvv'/>
+                           <input
+                              className='payment-security'
+                              placeholder="Security code"
+                              required
+                              type="text"
+                              name="cvv"
+                              minlength="3" maxlength="4"
+                              value={formValues.cvv}
+                              onChange={handleChange}
+                          />
+                         </div> 
                 </div>
                 
-                <LiaTimesSolid className='absolute-icon-cardname'/>
-                 <input
-                   className='creditcard-number'
-                    placeholder="Name on card"
-                    required
-                    type="text"
-                    name="cardname"
-                    value={formValues.cardname}
-                    onChange={handleChange}
-                />
-                
+                   <div className='absolute-icon-cardnum-cont'>
+                      <LiaTimesSolid className='absolute-icon-cardname'/>
+                       <input
+                         className='creditcard-number'
+                          placeholder="Name on card"
+                          required
+                          type="text"
+                          name="cardname"
+                          value={formValues.cardname}
+                          onChange={handleChange}
+                      />
+                    </div>
                 </div>
                 
         
