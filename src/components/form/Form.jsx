@@ -219,6 +219,7 @@ function Form() {
         
         <div>
               <div className='payment-address-cont'>
+                <FiSearch className='absolute-icon-address'/>
                    <input
                       className='form-input'
                       placeholder="Address"
@@ -276,6 +277,7 @@ function Form() {
             
      
             <div>
+                <BsQuestionCircle className='absolute-icon-phone'/>
                  <input
                       className='payment-phone'
                       placeholder="Phone"
@@ -315,6 +317,7 @@ function Form() {
                </div>
             </div>
             
+            <FiLock className='absolute-icon-cardnum'/>
             <input
               className='creditcard-number'
               placeholder="Card number"
@@ -340,6 +343,7 @@ function Form() {
             onChange={handleChange}
         />
         
+        <BsQuestionCircle className='absolute-icon-cvv'/>
          <input
             className='payment-security'
             placeholder="Security code"
@@ -352,6 +356,7 @@ function Form() {
         />
         </div>
         
+        <LiaTimesSolid className='absolute-icon-cardname'/>
          <input
            className='creditcard-number'
             placeholder="Name on card"
