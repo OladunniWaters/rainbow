@@ -134,7 +134,7 @@ function Form() {
       
       <form onSubmit={handlesubmit} className="payment-form-cont">
         <div className='box'>
-          <h1>Contact</h1>
+          <h1 className='payment-form-header'>Contact</h1>
           <input 
           className='payment-email'
           placeholder="Email"
@@ -145,14 +145,16 @@ function Form() {
             {touched.email && formError.email}
           </div>
           
+          <div className='checkbox-container'>
            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
             <label for="vehicle1">Email me with news and offers</label>
+          </div>  
         </div>
         
         
         
          <div>
-         <h1>Delivery</h1>
+         <h1 className='payment-form-header'>Delivery</h1>
           <input
             className='form-input'
             placeholder="Country/Region"
@@ -250,18 +252,26 @@ function Form() {
                       onChange={handleChange}
                   />
             </div>
-      
-      
+        </div>
+        
+     
+        
+        <div>
+          <h1 className='payment-form-header'>Shipping method</h1>
+        <div className='shipping-color-cont'>
+             <p className='shipping-color-p'>Free Standard Shipping (7-15 days)</p>
+             <p className='shipping-color-p1'>Free</p>
         </div>
         
         
-        
-        <div>
-         <h1>Payment</h1>
+         <h1 className='payment-form-header'>Payment</h1>
          <p>All transactions are secure and encrypted</p>
          <div className='payment-cc-cont'>
-            <div>
-               <p>Credit card</p>
+            <div className='creditcard-color-cont'>
+              <div className='creditcard-color-circle-cont'>
+               <BsFillRecordCircleFill className='creditcard-color-circle'/>
+               <p className='creditcard-color-p'>Credit card</p>
+                </div>
                <div className='card-image-cont'>
                  <img src={card1} alt='card-image' className='card'/>
                  <img src={card2} alt='card-image' className='card'/>
@@ -269,9 +279,10 @@ function Form() {
                  <img src={card4} alt='card-image' className='card'/>
                </div>
             </div>
+            
             <input
-              className='form-input'
-              placeholder="Card Number"
+              className='creditcard-number'
+              placeholder="Card number"
               type="text"
               name="cardnumber"
               minlength="13"
@@ -304,8 +315,8 @@ function Form() {
         </div>
         
          <input
-            className='form-input'
-            placeholder="Card Name"
+           className='creditcard-number'
+            placeholder="Name on card"
             type="text"
             name="cardname"
             value={formValues.cardname}
@@ -313,56 +324,15 @@ function Form() {
         />
         
         </div>
-              <div>
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-                <label for="vehicle1">Use shipping address as biling address</label>
+            <div className='checkbox-container'>
+                <input className='checkbox' type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+                <label className='checkbox-label' for="vehicle1">Use shipping address as billing address</label>
             </div>
        </div> 
    
         {isLoading ? (<LoadingSpinner />)
-       : ( <button type="submit">Pay now</button>) }
+       : ( <button className='money-button' type="submit">Pay now</button>) }
        
-       
-        <div>
-              <h1>Order summary</h1>
-              <div>
-                   <div className='section-1-img-cont'>
-                    <img src={land3} alt='land-image' className='land-image'/>
-                    <p>Ringo</p>
-                  </div>
-                  <p>$59.9</p>
-              </div>
-              
-              <div>
-                    <input
-                        className='form-input'
-                        placeholder="Discount code"
-                        type="text"
-                        name="discount code"
-                        value={formValues.discountcode}
-                        onChange={handleChange}
-                    />
-                    
-                    <button>Apply</button>
-              </div>
-              
-              <div>
-                  <div>
-                      <p>Subtotal</p>
-                      <p>$59.9</p>
-                  </div>
-                  
-                   <div>
-                      <p>Shipping</p>
-                      <p>Free</p>
-                  </div>
-                  
-                   <div>
-                      <p>Total</p>
-                      <p>$59.9</p>
-                  </div>
-              </div>
-        </div>
        
       </form>
       
