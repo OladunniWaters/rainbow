@@ -716,6 +716,33 @@ margin-top: 20px;
 }
 
 
+.payment-form-header-order {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+font-weight: bold;
+font-size: 2rem;
+text-align: left;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+font-weight: bold;
+font-size: 2rem;
+text-align: left;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+font-weight: bold;
+font-size: 2rem;
+text-align: left;
+}
+//extra large
+font-weight: bold;
+font-size: 2rem;
+text-align: left;
+margin-top: 40px;
+}
+
+
 .order-summary-1 {
   //small
 @media screen and (min-width: 320px) and (max-width: 576px) {
@@ -804,6 +831,22 @@ margin-bottom: 20px;
 }
 
 
+.order-totalQuantity-cont {
+  background-color: #000;
+  border-radius: 50%;
+  text-align: center;
+  padding: 8px;
+  width: 24px;
+  height: 24px;
+  margin-left: -50px;
+  margin-top: 8px;  
+}
+
+.order-totalQuantity {
+  font-family: 'Default Sans', sans-serif;
+  color: #fff;
+  margin-top: -6px; 
+}
 
 
 

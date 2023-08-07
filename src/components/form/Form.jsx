@@ -138,7 +138,14 @@ function Form() {
   }
  
 
-
+ const getTotalQuantity = () => {
+    let total = 0
+    cart.forEach(item => {
+      total += item.quantity
+    })
+    return total
+  }
+  
 
 
 
@@ -177,6 +184,7 @@ function Form() {
           <input
             className='form-input'
             placeholder="Country/Region"
+            required
             type="text"
             name="country"
             value={formValues.country}
@@ -189,6 +197,7 @@ function Form() {
          <input
             className='payment-name'
             placeholder="First name"
+            required
             type="text"
             name="firstname"
             value={formValues.firstname}
@@ -198,6 +207,7 @@ function Form() {
          <input
             className='payment-name'
             placeholder="Last name"
+            required
             type="text"
             name="lastname"
             value={formValues.lastname}
@@ -212,6 +222,7 @@ function Form() {
                    <input
                       className='form-input'
                       placeholder="Address"
+                      required
                       type="text"
                       name="address"
                       value={formValues.address}
@@ -221,6 +232,7 @@ function Form() {
                    <input
                       className='form-input'
                       placeholder="Apartment, Suite, etc. (Optional)"
+                      required
                       type="text"
                       name="apartment"
                       value={formValues.apartment}
@@ -233,6 +245,7 @@ function Form() {
                 <input
                       className='payment-city'
                       placeholder="City"
+                      required
                       type="text"
                       name="city"
                       value={formValues.city}
@@ -242,6 +255,7 @@ function Form() {
                    <input
                       className='payment-city'
                       placeholder="State"
+                      required
                       type="text"
                       name="state"
                       value={formValues.state}
@@ -251,6 +265,7 @@ function Form() {
                    <input
                       className='payment-city'
                       placeholder="ZIP code"
+                      required
                       type="text"
                       name="zipcode"
                       minlength="4" maxlength="6"
@@ -264,6 +279,7 @@ function Form() {
                  <input
                       className='payment-phone'
                       placeholder="Phone"
+                      required
                       type="text"
                       name="phone"
                       minlength="10" maxlength="15"
@@ -302,6 +318,7 @@ function Form() {
             <input
               className='creditcard-number'
               placeholder="Card number"
+              required
               type="text"
               name="cardnumber"
               minlength="13"
@@ -315,6 +332,7 @@ function Form() {
          <input
             className='payment-security'
             placeholder="Expiration date (MM/YY)"
+            required
             type="text"
             name="expdate"
             maxlength="5"
@@ -325,6 +343,7 @@ function Form() {
          <input
             className='payment-security'
             placeholder="Security code"
+            required
             type="text"
             name="cvv"
             minlength="3" maxlength="4"
@@ -336,6 +355,7 @@ function Form() {
          <input
            className='creditcard-number'
             placeholder="Name on card"
+            required
             type="text"
             name="cardname"
             value={formValues.cardname}
@@ -348,12 +368,15 @@ function Form() {
                 <label className='checkbox-label' for="vehicle1">Use shipping address as billing address</label>
             </div>
             
-          <h1 className='payment-form-header'>Order summary</h1> 
+          <h1 className='payment-form-header-order'>Order summary</h1> 
           
           <div className='order-s'>
                <div className='order-summary-1'>
                        <div className='order-img-cont'>
                         <img src={land3} alt='land-image' className='order-image'/>
+                         <div className='order-totalQuantity-cont'>
+                         <p className='order-totalQuantity'> {getTotalQuantity() || 0}</p>
+                        </div>
                         <p>Ringo</p>
                       </div>
                       <p>${getTotal().totalPrice}</p>

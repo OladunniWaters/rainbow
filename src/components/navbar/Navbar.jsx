@@ -55,7 +55,8 @@ function Navbar() {
             <ul className='profile-cart-cont'>
             <div className='shopping-cart' onClick={() => navigate('/cart')}>
               <BsHandbag className='cart' />
-              <div className='totalQuantity-cont'><p className='totalQuantity'> {getTotalQuantity() || 0}</p></div>
+              <div className='totalQuantity-cont'><p className='totalQuantity'> {getTotalQuantity() || 0}</p>
+              </div>
             </div>
             </ul>
 
