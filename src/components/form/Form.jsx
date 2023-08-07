@@ -291,7 +291,7 @@ function Form() {
         
      
         
-
+     <div>
         <h1 className='payment-form-header-1'>Shipping method</h1>
         <div className='shipping-color-cont'>
              <p className='shipping-color-p'>Free Standard Shipping (7-15 days)</p>
@@ -422,7 +422,7 @@ function Form() {
               </div> 
               
             </div>  
-    
+    </div>
        
         {isLoading ? (<LoadingSpinner />)
        : ( <button className='money-button' type="submit">Pay now</button>) }
