@@ -182,7 +182,7 @@ function Form() {
          <div>
          <h1 className='payment-form-header'>Delivery</h1>
           <input
-            className='form-input'
+            className='payment-email'
             placeholder="Country/Region"
             required
             type="text"
@@ -193,27 +193,25 @@ function Form() {
         </div>
         
         <div className='payment-name-cont'>
-        
-         <input
-            className='payment-name'
-            placeholder="First name"
-            required
-            type="text"
-            name="firstname"
-            value={formValues.firstname}
-            onChange={handleChange}
-        />
-        
-         <input
-            className='payment-name'
-            placeholder="Last name"
-            required
-            type="text"
-            name="lastname"
-            value={formValues.lastname}
-            onChange={handleChange}
-        />
-      
+               <input
+                  className='payment-name'
+                  placeholder="First name"
+                  required
+                  type="text"
+                  name="firstname"
+                  value={formValues.firstname}
+                  onChange={handleChange}
+              />
+              
+               <input
+                  className='payment-name'
+                  placeholder="Last name"
+                  required
+                  type="text"
+                  name="lastname"
+                  value={formValues.lastname}
+                  onChange={handleChange}
+              />
         </div>
         
         
@@ -221,7 +219,7 @@ function Form() {
               <div className='payment-address-cont'>
                 <FiSearch className='absolute-icon-address'/>
                    <input
-                      className='form-input'
+                      className='payment-email'
                       placeholder="Address"
                       required
                       type="text"
@@ -231,7 +229,7 @@ function Form() {
                   />
                   
                    <input
-                      className='form-input'
+                      className='payment-email'
                       placeholder="Apartment, Suite, etc. (Optional)"
                       required
                       type="text"
@@ -293,88 +291,91 @@ function Form() {
         
      
         
-        <div>
-          <h1 className='payment-form-header'>Shipping method</h1>
+
+        <h1 className='payment-form-header-1'>Shipping method</h1>
         <div className='shipping-color-cont'>
              <p className='shipping-color-p'>Free Standard Shipping (7-15 days)</p>
              <p className='shipping-color-p1'>Free</p>
         </div>
         
         
-         <h1 className='payment-form-header'>Payment</h1>
+         <h1 className='payment-form-header-1'>Payment</h1>
          <p>All transactions are secure and encrypted</p>
          <div className='payment-cc-cont'>
-            <div className='creditcard-color-cont'>
-              <div className='creditcard-color-circle-cont'>
-               <BsFillRecordCircleFill className='creditcard-color-circle'/>
-               <p className='creditcard-color-p'>Credit card</p>
+                <div className='creditcard-color-cont'>
+                      <div className='creditcard-color-circle-cont'>
+                       <BsFillRecordCircleFill className='creditcard-color-circle'/>
+                       <p className='creditcard-color-p'>Credit card</p>
+                        </div>
+                       <div className='card-image-cont'>
+                         <img src={card1} alt='card-image' className='card'/>
+                         <img src={card2} alt='card-image' className='card'/>
+                         <img src={card3} alt='card-image' className='card'/>
+                         <img src={card4} alt='card-image' className='card'/>
+                       </div>
                 </div>
-               <div className='card-image-cont'>
-                 <img src={card1} alt='card-image' className='card'/>
-                 <img src={card2} alt='card-image' className='card'/>
-                 <img src={card3} alt='card-image' className='card'/>
-                 <img src={card4} alt='card-image' className='card'/>
-               </div>
-            </div>
             
-            <FiLock className='absolute-icon-cardnum'/>
-            <input
-              className='creditcard-number'
-              placeholder="Card number"
-              required
-              type="text"
-              name="cardnumber"
-              minlength="13"
-              maxlength="16"
-              pattern="([A-z0-9À-ž\s]){10,}"
-              value={formValues.cardnumber}
-              onChange={handleChange}
-          />
+                    <FiLock className='absolute-icon-cardnum'/>
+                    <input
+                      className='creditcard-number'
+                      placeholder="Card number"
+                      required
+                      type="text"
+                      name="cardnumber"
+                      minlength="13"
+                      maxlength="16"
+                      pattern="([A-z0-9À-ž\s]){10,}"
+                      value={formValues.cardnumber}
+                      onChange={handleChange}
+                  />
+                
+                <div className='payment-cc-cont-2'>
+                     <input
+                        className='payment-security'
+                        placeholder="Expiration date (MM/YY)"
+                        required
+                        type="text"
+                        name="expdate"
+                        maxlength="5"
+                        value={formValues.expdate}
+                        onChange={handleChange}
+                    />
+                    
+                    <BsQuestionCircle className='absolute-icon-cvv'/>
+                     <input
+                        className='payment-security'
+                        placeholder="Security code"
+                        required
+                        type="text"
+                        name="cvv"
+                        minlength="3" maxlength="4"
+                        value={formValues.cvv}
+                        onChange={handleChange}
+                    />
+                </div>
+                
+                <LiaTimesSolid className='absolute-icon-cardname'/>
+                 <input
+                   className='creditcard-number'
+                    placeholder="Name on card"
+                    required
+                    type="text"
+                    name="cardname"
+                    value={formValues.cardname}
+                    onChange={handleChange}
+                />
+                
+                </div>
+                
         
-        <div className='payment-cc-cont-2'>
-         <input
-            className='payment-security'
-            placeholder="Expiration date (MM/YY)"
-            required
-            type="text"
-            name="expdate"
-            maxlength="5"
-            value={formValues.expdate}
-            onChange={handleChange}
-        />
-        
-        <BsQuestionCircle className='absolute-icon-cvv'/>
-         <input
-            className='payment-security'
-            placeholder="Security code"
-            required
-            type="text"
-            name="cvv"
-            minlength="3" maxlength="4"
-            value={formValues.cvv}
-            onChange={handleChange}
-        />
-        </div>
-        
-        <LiaTimesSolid className='absolute-icon-cardname'/>
-         <input
-           className='creditcard-number'
-            placeholder="Name on card"
-            required
-            type="text"
-            name="cardname"
-            value={formValues.cardname}
-            onChange={handleChange}
-        />
-        
-        </div>
             <div className='checkbox-container'>
                 <input className='checkbox' type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
                 <label className='checkbox-label' for="vehicle1">Use shipping address as billing address</label>
             </div>
             
+            
+            
           <h1 className='payment-form-header-order'>Order summary</h1> 
-          
           <div className='order-s'>
                <div className='order-summary-1'>
                        <div className='order-img-cont'>
@@ -417,8 +418,7 @@ function Form() {
               </div> 
               
             </div>  
-            
-       </div> 
+    
        
         {isLoading ? (<LoadingSpinner />)
        : ( <button className='money-button' type="submit">Pay now</button>) }
