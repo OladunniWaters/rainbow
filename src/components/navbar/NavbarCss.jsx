@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 import { BsHandbag } from 'react-icons/bs';
 
 
+
 function NavbarCss() {
   const navigate = useNavigate()
   const cart = useSelector((state) => state.cart)
@@ -24,12 +25,6 @@ function NavbarCss() {
     <div class="navbar">
        <div className='navbar-cont container'>
           <div className='offcanvas-cont'>
-          <div className='cart-cont-1'>
-                <div className='shopping-cart' onClick={() => navigate('/cart')}>
-                  <BsHandbag className='cart' />
-                  <div className='totalQuantity-cont'><p className='totalQuantity'> {getTotalQuantity() || 0}</p></div>
-                </div>
-           </div>
           
            <a class="navbar-brand" href="/">Ringo</a>
             <button class="offcanvas-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">

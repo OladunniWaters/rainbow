@@ -284,26 +284,6 @@ display: block;
 }
 
 
-
-
-.cart-cont-1 {
-  //small
-@media screen and (min-width: 320px) and (max-width: 576px) {
-display: block;
-}
-// medium
-@media screen and (min-width: 577px) and (max-width: 768px) {
-display: block;
-}
-//large
-@media screen and (min-width: 769px) and (max-width: 992px) {
-display: none;
-}
-//extra large
-display: none;
-}
-
-
 .offcanvas-links {
   display: flex;
   flex-direction: column;

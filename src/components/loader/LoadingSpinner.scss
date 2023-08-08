@@ -14,6 +14,7 @@ body {
       background-color: #fff;
       display: grid;
       place-items: center;
+      z-index: 100000000;
     }
 
     .loader {
