@@ -6,7 +6,7 @@ export default function LoadingSpinner() {
     <>
       <div class="loader-wrapper">
         <div class="loader"></div>
-        <h1 class='loader-h1'>Your order's been processed</h1>
+        <h1 class='loader-h1'>Your order is been processed</h1>
       </div>
     </>
   );

@@ -151,7 +151,7 @@ function Form() {
 
   return (
   
-    <div>
+    <div className='payment-form-container'>
     
       <ToastContainer 
        position="top-center"

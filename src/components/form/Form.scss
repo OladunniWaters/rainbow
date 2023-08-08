@@ -1,4 +1,36 @@
 
+.payment-form-container {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+//extra large
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+
+
+
 .payment-form-cont {
   //small
 @media screen and (min-width: 320px) and (max-width: 576px) {
@@ -350,9 +382,10 @@ gap: 10px;
     border: 1px solid #EB5757;
     border-radius: 5px !important;
     background: #FAE1E2 !important;
-    width: 500px;
+    width: 340px;
     position: relative;
-    top: 400px;
+    top: 320px;
+    left: 40px;
 }
 .Toastify__toast--error::after {
   content : url('../assets/images/svg/closeToast.svg'); // Your svg Path
@@ -360,19 +393,19 @@ gap: 10px;
   color: #333333;
   font-size: 15px;
   font-weight: 700;
-  left:265px;
+  left: 265px;
   padding-top: 14px !important;
 }
 .Toastify__toast--error::before {
   content: url("../assets/images/svg/errorToast.svg");// Your svg Path
   position: relative; 
-  z-index:100000;
-  left:12px;
-  top:6px;
+  z-index: 100000;
+  left: 0px;
+  top: 0px;
 }
 
 .Toastify__toast-body {
-  color: #444C63    ;
+  color: #000   ;
   font-size: 16px;
   padding-left: 20px;
   line-height: 20px;
