@@ -17,6 +17,8 @@ import card5 from '../../assets/Dinners Club.png';
 import card6 from '../../assets/Discover.png';
 import card7 from '../../assets/UnionPay.png';
 
+  import { ToastContainer, toast } from 'react-toastify';
+
 
 function Shop({product}) {
   const {id, thumbnail, title, price} = product
@@ -26,6 +28,11 @@ function Shop({product}) {
 
   return (
     <div className='container'>
+    
+       <ToastContainer 
+       position="top-center"
+      />
+    
         <div className='shop-cont'>
          <Carousel showStatus={false} showIndicators={false} showArrows={false}>
             <div className='prdouct-image-item'>
@@ -64,7 +71,7 @@ function Shop({product}) {
                     
                     <div className="item-info">
                         <p className="item-price"></p>
-                      <button onClick={() => {dispatch(addToCart({id, title, thumbnail, price}))  }} id='button' className='item-button'>
+                      <button onClick={() => {dispatch(addToCart({id, title, thumbnail, price})); toast.success('Item added to cart successfully')  }} id='button' className='item-button'>
                            BUY NOW
                       </button>
           

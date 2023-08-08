@@ -201,11 +201,13 @@ ul {
 @media screen and (min-width: 320px) and (max-width: 576px) {
 display: block;
 border: none;
+background: #fff;
 }
 // medium
 @media screen and (min-width: 577px) and (max-width: 768px) {
 display: block;
 border: none;
+background: #fff;
 }
 //large
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -302,6 +304,13 @@ display: none;
 }
 
 
+.offcanvas-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
 
 
 
