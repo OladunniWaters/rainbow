@@ -31,7 +31,7 @@ function NavbarCss() {
               <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="staticBackdropLabel">
-                     <a class="navbar-brand" href="/">Ringo</a>
+                     <div class="navbar-brand" onClick={() => navigate('/')}>Ringo</div>
                   </h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
@@ -39,23 +39,23 @@ function NavbarCss() {
                   <div>
                        <ul className="offcanvas-links">
                         <li class="nav-item">
-                          <a class="nav-link" href="/contact">Contact</a>
+                          <div class="nav-link" onClick={() => navigate('/contact')}>Contact</div>
                         </li>
                         <li class="nav-item">
-                         <a class="nav-link" href='/shop'>Shop</a>
+                         <div class="nav-link" onClick={() => navigate('/shop')}>Shop</div>
                         </li>              
                         <li class="nav-item">
-                          <a class="nav-link" href="/track">Track</a>
+                          <div class="nav-link" onClick={() => navigate('/track')}>Track</div>
                         </li>
                          <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Policies
                           </a>
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/refundpolicy">Refund Policy</a></li>
-                            <li><a class="dropdown-item" href="/shippingpolicy">Shipping Policy</a></li>
-                            <li><a class="dropdown-item" href="/terms"> Terms of Service</a></li>
-                            <li><a class="dropdown-item" href="/terms"></a>Privacy Policy</li>
+                           <li><div class="dropdown-item" onClick={() => navigate('/refundpolicy')} >Refund Policy</div></li>
+                              <li><div class="dropdown-item" onClick={() => navigate('/shippingpolicy')} >Shipping Policy</div></li>
+                              <li><div class="dropdown-item"onClick={() => navigate('/terms')} > Terms of Service</div></li>
+                      
                           </ul>
                         </li>
                       </ul>
@@ -63,27 +63,26 @@ function NavbarCss() {
                 </div>
               </div>   
               
-               <a class="navbar-brand" href="/">Ringo</a>
+               <div class="navbar-brand" onClick={() => navigate('/')}>Ringo</div>
                
             <ul class="nav-link-cont">
               <li class="nav-item">
-                <a class="nav-link" href="/contact">Contact</a>
+                <div class="nav-link" onClick={() => navigate('/contact')}>Contact</div>
               </li>
               <li class="nav-item">
-               <a class="nav-link" href='/shop'>Shop</a>
+               <div class="nav-link" onClick={() => navigate('/shop')}>Shop</div>
               </li>              
               <li class="nav-item">
-                <a class="nav-link" href="/track">Track</a>
+                <div class="nav-link" onClick={() => navigate('/track')}>Track</div>
               </li>
                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Policies
-                </a>
+                </div>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/refundpolicy">Refund Policy</a></li>
-                  <li><a class="dropdown-item" href="/shippingpolicy">Shipping Policy</a></li>
-                  <li><a class="dropdown-item" href="/terms"> Terms of Service</a></li>
-                  <li><a class="dropdown-item" href="/terms"></a>Privacy Policy</li>
+                  <li><div class="dropdown-item" onClick={() => navigate('/refundpolicy')} >Refund Policy</div></li>
+                  <li><div class="dropdown-item" onClick={() => navigate('/shippingpolicy')} >Shipping Policy</div></li>
+                  <li><div class="dropdown-item"onClick={() => navigate('/terms')} > Terms of Service</div></li>
                 </ul>
               </li>
             </ul>

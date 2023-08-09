@@ -1,9 +1,10 @@
-import "./NavbarCss.scss";
+import "./Navbar.scss";
 import { RxHamburgerMenu } from 'react-icons/rx';
 
 import {useNavigate} from 'react-router-dom'
 import { useSelector } from 'react-redux';
 import { BsHandbag } from 'react-icons/bs';
+
 
 
 function NavbarCss() {
@@ -23,85 +24,76 @@ function NavbarCss() {
   return (
     <div class="navbar">
        <div className='navbar-cont container'>
-          <div className='offcanvas-cont'>
-          <div className='cart-cont-1'>
-                <div className='shopping-cart' onClick={() => navigate('/cart')}>
-                  <BsHandbag className='cart' />
-                  <div className='totalQuantity-cont'><p className='totalQuantity'> {getTotalQuantity() || 0}</p></div>
-                </div>
-           </div>
-          
-           <a class="navbar-brand" href="/">Ringo</a>
-            <button class="offcanvas-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+         <button class="offcanvas-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
                 <RxHamburgerMenu className='hamburger'/>
               </button>
-              
+                         
               <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="staticBackdropLabel">
-                     <a class="navbar-brand" href="/">Ringo</a>
+                     <div class="navbar-brand" onClick={() => navigate('/')}>Ringo</div>
                   </h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                   <div>
-                       <ul class="">
+                       <ul className="offcanvas-links">
                         <li class="nav-item">
-                          <a class="nav-link" href="/contact">Contact</a>
+                          <div class="nav-link" onClick={() => navigate('/contact')}>Contact</div>
                         </li>
                         <li class="nav-item">
-                         <a class="nav-link" href='/shop'>Shop</a>
+                         <div class="nav-link" onClick={() => navigate('/shop')}>Shop</div>
                         </li>              
                         <li class="nav-item">
-                          <a class="nav-link" href="/track">Track</a>
+                          <div class="nav-link" onClick={() => navigate('/track')}>Track</div>
                         </li>
                          <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Policies
                           </a>
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/refundpolicy">Refund Policy</a></li>
-                            <li><a class="dropdown-item" href="/shippingpolicy">Shipping Policy</a></li>
-                            <li><a class="dropdown-item" href="/terms"> Terms of Service</a></li>
-                            <li><a class="dropdown-item" href="/terms"></a>Privacy Policy</li>
+                           <li><div class="dropdown-item" onClick={() => navigate('/refundpolicy')} >Refund Policy</div></li>
+                              <li><div class="dropdown-item" onClick={() => navigate('/shippingpolicy')} >Shipping Policy</div></li>
+                              <li><div class="dropdown-item"onClick={() => navigate('/terms')} > Terms of Service</div></li>
+                      
                           </ul>
                         </li>
                       </ul>
                   </div>
                 </div>
-              </div>
-  
-           </div>   
+              </div>   
               
+               <div class="navbar-brand" onClick={() => navigate('/')}>Ringo</div>
+               
             <ul class="nav-link-cont">
               <li class="nav-item">
-                <a class="nav-link" href="/contact">Contact</a>
+                <div class="nav-link" onClick={() => navigate('/contact')}>Contact</div>
               </li>
               <li class="nav-item">
-               <a class="nav-link" href='/shop'>Shop</a>
+               <div class="nav-link" onClick={() => navigate('/shop')}>Shop</div>
               </li>              
               <li class="nav-item">
-                <a class="nav-link" href="/track">Track</a>
+                <div class="nav-link" onClick={() => navigate('/track')}>Track</div>
               </li>
                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Policies
-                </a>
+                </div>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/refundpolicy">Refund Policy</a></li>
-                  <li><a class="dropdown-item" href="/shippingpolicy">Shipping Policy</a></li>
-                  <li><a class="dropdown-item" href="/terms"> Terms of Service</a></li>
-                  <li><a class="dropdown-item" href="/terms"></a>Privacy Policy</li>
+                  <li><div class="dropdown-item" onClick={() => navigate('/refundpolicy')} >Refund Policy</div></li>
+                  <li><div class="dropdown-item" onClick={() => navigate('/shippingpolicy')} >Shipping Policy</div></li>
+                  <li><div class="dropdown-item"onClick={() => navigate('/terms')} > Terms of Service</div></li>
                 </ul>
               </li>
             </ul>
             
-            <div className='cart-cont'>
+             <div className='cart-cont'>
                 <div className='shopping-cart' onClick={() => navigate('/cart')}>
                   <BsHandbag className='cart' />
                   <div className='totalQuantity-cont'><p className='totalQuantity'> {getTotalQuantity() || 0}</p></div>
                 </div>
            </div>
+               
        </div>
  </div>   
   );
