@@ -14,7 +14,7 @@ function Hero() {
            
             <div className='hero-1-text-cont'>
                 <h3 className='hero-h3'>ORDER DURING THE SUMMER & SAVE BIG</h3>
-                <a href='/productpage' className='hero-a effect-1'>Order Now</a>
+                <div className='hero-a effect-1' onClick={() => navigate('/shop')}>Order Now</div>
             </div>
         </div>
        
