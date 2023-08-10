@@ -25,7 +25,7 @@ function Footer() {
            </div>
            
            <div className='copyright-cont'>
-                <span class="copyright-2"><FaRegCopyright />2020 The Kitlis Powered by Shopify
+                <span class="copyright-2"><FaRegCopyright />2020 MudBuster
                </span>
            
                <div className='card-image-cont'>

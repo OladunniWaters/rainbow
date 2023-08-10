@@ -17,7 +17,18 @@ import card5 from '../../assets/Dinners Club.png';
 import card6 from '../../assets/Discover.png';
 import card7 from '../../assets/UnionPay.png';
 
-  import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
+
+
+
+import land1 from '../../assets/chrome_image_Aug 10, 2023 4_01_19 PM GMT+01_00.png';
+import land2 from '../../assets/chrome_image_Aug 10, 2023 3_30_04 PM GMT+01_00.png';
+import land3 from '../../assets/chrome_image_Aug 10, 2023 4_01_45 PM GMT+01_00.png';
+import land4 from '../../assets/71129YDLDEL._AC_SY879_.jpg';
+import land5 from '../../assets/81uEmPvhyzL._AC_SY879_.jpg';
+import land6 from '../../assets/71vM6RTH0vL._AC_SL1500_.jpg';
+import land7 from '../../assets/61+xiC7m8jL._AC_SX466_.jpg';
+
 
 
 function Shop({product}) {
@@ -39,10 +50,10 @@ function Shop({product}) {
               <img alt="" src={thumbnail} />
             </div>
             <div>
-              <img alt="" src="https://res.cloudinary.com/dzutmmwkf/image/upload/v1680179150/Waters-Ecommerce/product2_vmtbfc.webp" />
+              <img alt="" src={land2} />
             </div>
             <div>
-              <img alt="" src="https://res.cloudinary.com/dzutmmwkf/image/upload/v1680179154/Waters-Ecommerce/product6_csfrpc.webp" />
+              <img alt="" src={land3} />
             </div>
            
       </Carousel>

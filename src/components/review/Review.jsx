@@ -7,7 +7,7 @@ function Review() {
 
   return (
           <div className=" Products"> 
-                <h1 className='review-header'>Don't take our word for it</h1>
+                <h1 className='review-header'>Pawsitively Impressed Customers Share Their MudBuster Love!</h1>
                  <div className="star-cont">
                    <div>
                       <FaStar className='star'/>

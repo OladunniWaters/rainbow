@@ -98,14 +98,20 @@ font-size: 20px;
 }
 // medium
 @media screen and (min-width: 577px) and (max-width: 768px) {
-margin-bottom: 20px;  
+margin-bottom: 20px; 
+text-align: center;
+font-size: 20px; 
 }
 //large
 @media screen and (min-width: 769px) and (max-width: 992px) {
 margin-bottom: 20px; 
+text-align: center;
+font-size: 20px;
 }
 //extra large
 margin-bottom: 20px; 
+text-align: center;
+font-size: 20px;
 }
 
 
