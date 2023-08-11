@@ -23,7 +23,7 @@ function LandingPage() {
   
       <div className='section-1'>
         <div className='section-1-img-cont'>
-            <img src={land1} alt='land-image' className='land-image'/>
+            <img src={land1} alt='land-image' className='land-image1'/>
         </div>
         <div className='section-1-text-cont'>
             <h3 className='section-1-h3'>Effortless Paw Cleaning at Your Fingertips</h3>
@@ -37,7 +37,7 @@ function LandingPage() {
     
      <div className='section-2'>
         <div className='section-2-img-cont'>
-            <img src={land2} alt='land-image' className='land-image'/>
+            <img src={land2} alt='land-image' className='land-image2'/>
         </div>
         <div className='section-2-text-cont'>
             <h3 className='section-2-h3'>Velvety Soft Silicone Bristles</h3>
@@ -49,7 +49,7 @@ function LandingPage() {
      
       <div className='section-3'>
         <div className='section-3-img-cont'>
-            <img src={land3} alt='land-image' className='land-image'/>
+            <img src={land3} alt='land-image' className='land-image3'/>
         </div>
         <div className='section-3-text-cont'>
             <h3 className='section-3-h3'>Unleash Adventure, Rain or Shine!</h3>
@@ -63,7 +63,7 @@ function LandingPage() {
      
       <div className='section-4'>
         <div className='section-4-img-cont'>
-          <img src={land4} alt='land-image' className='land-image'/>
+          <img src={land4} alt='land-image' className='land-image4'/>
         </div>
         <div className='section-4-text-cont'>
             <h3 className='section-4-h3'>Luxurious Bonus: Three Premium Absorbent Towels Included!</h3>
@@ -87,7 +87,7 @@ function LandingPage() {
          
          <div className='warranty-1-section'>
              <BsFillCheckCircleFill className='warranty-1-icon'/>
-              <h3 className='warranty-1-section-h3'>30 DAY MONEY BACK GUARANTEE</h3>
+              <h3 className='warranty-1-section-h3'>30 DAY MONEY BACK</h3>
                <p className='warranty-1-section-p'>
                
                  Don't love it for some reason? we proudly offer a 30-day hassle-free return policy, providing you with the freedom to make your decision with absolute peace of mind and a full product refund.
