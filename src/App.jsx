@@ -11,7 +11,9 @@ import Terms from './components/policies/Terms';
 import Cart from './components/cart/Cart';
 import PaymentForm from './components/form/Form';
 import Product from './components/product/Product';
+
 import AdsComponent from './components/ad/AdsComponent';
+
 import {BrowserRouter as HashRouter, Routes, Route} from "react-router-dom";
 import  { useState } from 'react';
 
@@ -27,8 +29,7 @@ function App() {
  <div className="app" data-theme={theme}>
     <HashRouter>
       <Banner />
-      //Note provide dataAdSlot value of your data-ad-slot which is your ad unit no.
-      <AdsComponent dataAdSlot='3864614118' />
+      <AdsComponent />
       <Navbar changeTheme={changeTheme}/>
       <Routes>
         <Route exact path="/" element={<Home />} />

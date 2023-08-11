@@ -1,35 +1,26 @@
-import React, { useEffect  } from 'react';
-
-const AdsComponent = (props) => {
-    const { dataAdSlot } = props;  
+import React, { useEffect } from 'react';
 
 
-
-    useEffect(() => {
-
-        try {
-            (window.adsbygoogle = window.adsbygoogle || []).push({});
-        }
-
-        catch (e) {
-
-        }
-
-    },[]);
-
-
-
-    return (
-        <>
-            <ins className="adsbygoogle"
-                style={{ display: "block" }}
-                data-ad-client="ca-pub-6917584905087010"
-                data-ad-slot={dataAdSlot}
-                data-ad-format="auto"
-                data-full-width-responsive="true">
-            </ins>
-        </>
-    );
+const AdComponent = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
+    script.async = true;
+    document.head.appendChild(script);
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+  return (
+    <div>
+      <h1>Your Component</h1>
+      <ins className="adsbygoogle"
+           style={{ display: 'block' }}
+           data-ad-client="ca-pub-6917584905087010"
+           data-ad-slot="3864614118"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+    </div>
+  );
 };
-
-export default AdsComponent;
+export default AdComponent;
