@@ -5,7 +5,7 @@ import {useNavigate} from 'react-router-dom'
 import { useSelector } from 'react-redux';
 import { BsHandbag } from 'react-icons/bs';
 
-
+import logo from '../../assets/mudbuster_logo.png';
 
 function NavbarCss() {
   const navigate = useNavigate()
@@ -31,7 +31,9 @@ function NavbarCss() {
               <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="staticBackdropLabel">
-                     <div class="navbar-brand" onClick={() => navigate('/')}>MUDBUSTER</div>
+                        <div onClick={() => navigate('/')}>  
+                           <img src={logo} alt='card-image' class="navbar-brand-image"/>
+                        </div>
                   </h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
@@ -63,7 +65,9 @@ function NavbarCss() {
                 </div>
               </div>   
               
-               <div class="navbar-brand" onClick={() => navigate('/')}>Ringo</div>
+               <div onClick={() => navigate('/')}>  
+                    <img src={logo} alt='card-image' class="navbar-brand-image"/>
+               </div>
                
             <ul class="nav-link-cont">
               <li class="nav-item">

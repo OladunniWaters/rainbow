@@ -83,7 +83,27 @@ justify-content: center;
 }
 
 
-.navbar-brand {
+
+.navbar-brand-image {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+width: 150px;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+}
+//extra large
+width: 200px;
+}
+
+
+
+.navbar-brand-text {
   //small
 @media screen and (min-width: 320px) and (max-width: 576px) {
 font-family: 'Pacifico', cursive;
@@ -117,7 +137,7 @@ color: var(--color-text);
 }
 
 
-.navbar-brand:hover {
+.navbar-brand-text:hover {
   //small
 @media screen and (min-width: 320px) and (max-width: 576px) {
 font-family: 'Pacifico', cursive;

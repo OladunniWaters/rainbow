@@ -3,27 +3,27 @@
 .review-header {
   //small
 @media screen and (min-width: 320px) and (max-width: 576px) {
-font-size: 2rem;
+font-size: 1.5rem;
 text-align: center;
 font-weight: bold;
 padding-bottom: 20px;
 }
 // medium
 @media screen and (min-width: 577px) and (max-width: 768px) {
-font-size: 4rem;
+font-size: 2rem;
 text-align: center;
 font-weight: bold;
 padding-bottom: 20px;
 }
 //large
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-font-size: 4rem;
+font-size: 2rem;
 text-align: center;
 font-weight: bold;
 padding-bottom: 20px;
 }
 //extra large
-font-size: 4rem;
+font-size: 2rem;
 text-align: center;
 font-weight: bold;
 padding-bottom: 20px;

@@ -68,13 +68,13 @@ function Shop({product}) {
                           <FaStar className='star'/>
                           <FaStar className='star'/>
                        </div>   
-                       <p className='star-rating'>(310)</p>
+                       <p className='star-rating'>(560)</p>
                     </div>
                     
                        <p className="sale-tag"> Summer Sale </p>
                     
                     <div className="discount-cont">
-                         <p className="original-price">$100.00</p>
+                         <p className="original-price">$17.00</p>
                          <p className="discount-price">${price}</p>
                     </div>
                   
