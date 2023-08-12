@@ -17,7 +17,7 @@ import { BsFillRecordCircleFill, BsQuestionCircle  } from 'react-icons/bs';
 import { FiSearch, FiLock  } from 'react-icons/fi';
 import { LiaTimesSolid } from 'react-icons/lia';
 
-import land3 from '../../assets/no-iphone-no-problem-1500-test.png';
+import land3 from '../../assets/chrome_image_Aug 10, 2023 4_01_19 PM GMT+01_00.png';
 
 function Form() {
   const [isLoading, setIsLoading] = useState(false);
@@ -322,9 +322,6 @@ function Form() {
                           required
                           type="text"
                           name="cardnumber"
-                          minlength="13"
-                          maxlength="16"
-                          pattern="([A-z0-9À-ž\s]){10,}"
                           value={formValues.cardnumber}
                           onChange={handleChange}
                       />
@@ -337,7 +334,6 @@ function Form() {
                         required
                         type="text"
                         name="expdate"
-                        maxlength="5"
                         value={formValues.expdate}
                         onChange={handleChange}
                     />
@@ -350,7 +346,6 @@ function Form() {
                               required
                               type="text"
                               name="cvv"
-                              minlength="3" maxlength="4"
                               value={formValues.cvv}
                               onChange={handleChange}
                           />
@@ -387,7 +382,7 @@ function Form() {
                          <div className='order-totalQuantity-cont'>
                          <p className='order-totalQuantity'> {getTotalQuantity() || 0}</p>
                         </div>
-                        <p>Ringo</p>
+                        <p>MudBuster</p>
                       </div>
                       <p>${getTotal().totalPrice}</p>
                   </div>

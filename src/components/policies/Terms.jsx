@@ -160,10 +160,10 @@ function Terms() {
             
              <h2 className='terms-small-header'>SECTION 20 - CONTACT INFORMATION</h2>
             <p className='terms-p'>
-             Questions about the Terms of Service should be sent to us at help.thedrencher@gmail.com.
+             Questions about the Terms of Service should be sent to us at mudbuster@gmail.com.
               Our contact information is posted below:
               MILOMATIC LTD
-              help.thedrencher@gmail.com
+              mudbuster@gmail.com
               101 KING'S CROSS ROAD
               LONDON
               UNITED KINGDOM

@@ -38,7 +38,7 @@ function ReviewItem({reviews}) {
               
                
                <hr className="review-hr"/>
-               <p className="review-productname">Journey Pack</p>
+               <p className="review-productname">MudBuster</p>
     </div>
   );
 }

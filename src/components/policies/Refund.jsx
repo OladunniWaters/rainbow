@@ -9,7 +9,7 @@ function Refund() {
 
           You’ll also need the receipt or proof of purchase.
 
-          To start a return, you can contact us at help.thedrencher@gmail.com. 
+          To start a return, you can contact us at mudbuster@gmail.com. 
 
           If your return is accepted, we’ll send you a return shipping label, as well as instructions on how and where to send your package. Items sent back to us without first requesting a return will not be accepted.
           
@@ -39,7 +39,7 @@ function Refund() {
            <h4 className='refund-small-header'>Refunds</h4>
           <p className='refund-p'>
              We will notify you once we’ve received and inspected your return, and let you know if the refund was approved or not. If approved, you’ll be automatically refunded on your original payment method within 10 business days. Please remember it can take some time for your bank or credit card company to process and post the refund too.
-             If more than 15 business days have passed since we’ve approved your return, please contact us at help.thedrencher@gmail.com.
+             If more than 15 business days have passed since we’ve approved your return, please contact us at mudbuster@gmail.com.
           </p>
      </div>
   );
