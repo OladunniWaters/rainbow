@@ -11,7 +11,8 @@ import Terms from './components/policies/Terms';
 import Cart from './components/cart/Cart';
 import PaymentForm from './components/form/Form';
 import Product from './components/product/Product';
-
+import AdsComponent from './components/ad/AdsComponent';
+      
 
 
 import {BrowserRouter as HashRouter, Routes, Route} from "react-router-dom";
@@ -30,6 +31,7 @@ function App() {
     <HashRouter>
       <Banner />
       <Navbar changeTheme={changeTheme}/>
+      <AdsComponent />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/track" element={<Track />} />
