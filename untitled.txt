@@ -1,2 +1,0 @@
-      import AdsComponent from './components/ad/AdsComponent';
-      <AdsComponent />
