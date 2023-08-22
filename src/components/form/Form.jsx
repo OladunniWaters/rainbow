@@ -3,7 +3,7 @@
  import {useSelector} from 'react-redux'
  
   import { useState, useEffect } from "react";
- // import { ToastContainer, toast } from 'react-toastify';
+  import { ToastContainer, toast } from 'react-toastify';
 
   import 'react-toastify/dist/ReactToastify.css';
   import LoadingSpinner from "../loader/LoadingSpinner";
@@ -112,7 +112,7 @@ function Form() {
             setFormValues({})
             setIsLoading(false)
            // alert("success");
-           //toast.error("Your payment details couldn't be verified. Check your card details and try again")
+           toast.error("Your payment details couldn't be verified. Check your card details and try again")
           } else {
           //  alert("failure");
           setFormValues({})
@@ -152,7 +152,11 @@ function Form() {
   return (
   
     <div className='payment-form-container'>
-
+    
+      <ToastContainer 
+       position="top-center"
+      />
+      
       
       <form onSubmit={handlesubmit} className="payment-form-cont">
         <div className='box'>
@@ -263,7 +267,6 @@ function Form() {
                       required
                       type="text"
                       name="zipcode"
-                      minlength="4" maxlength="6"
                       value={formValues.zipcode}
                       onChange={handleChange}
                   />
@@ -278,7 +281,6 @@ function Form() {
                       required
                       type="text"
                       name="phone"
-                      minlength="10" maxlength="15"
                       value={formValues.phone}
                       onChange={handleChange}
                   />

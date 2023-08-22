@@ -4,7 +4,7 @@ import { FaAward  } from 'react-icons/fa';
 import { BsFillCheckCircleFill } from 'react-icons/bs';
 import { BiSupport } from 'react-icons/bi';
 
-import AdsComponent from '../../ad/AdsComponent';
+
 
 import land1 from '../../../assets/chrome_image_Aug 10, 2023 4_01_45 PM GMT+01_00.png';
 import land2 from '../../../assets/chrome_image_Aug 10, 2023 4_01_19 PM GMT+01_00.png';
@@ -33,7 +33,7 @@ function LandingPage() {
 
                 Maintenance is a breeze too! Detach the lid and unfurl the bristles for quick and thorough cleaning. Rinse for the next round of spotless paw pampering. Say goodbye to mess and hello to hassle-free paw perfection with MudBuster!
             </p>
-               <AdsComponent dataAdSlot='3864614118'/>
+
         </div>
      </div>
      
